@@ -1,0 +1,174 @@
+p {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+#bar {
+  font: 30px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 5;
+  display: none;
+}
+
+
+img {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+span:hover+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.hidden {
+  display: none margin: none;
+  padding: none;
+  border: none;
+  line-height: 0px;
+}
+
+iframe {
+  margin: none;
+  padding: none;
+  border: none;
+  line-height: 0px;
+}
+
+.myDIV {
+  color: black;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+
+dl>div {
+  padding: 0px 0 0 0;
+}
+
+dl a {
+  display: block;
+  width: 40px;
+}
+
+dt {
+  font: 30px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0px 15px 0 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 325px;
+  bottom: 375px;
+}
+
+dd {
+  font: 20px/45px Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+  color: white;
+  opacity: 0;
+}
+
+.yourbg {
+  color: #45CEEF;
+  -webkit-animation: colorpulse 2s infinite alternate;
+  animation: colorpulse 2s infinite alternate;
+}
+
+@-webkit-keyframes colorpulse {
+  0% {
+    color: red;
+  }
+
+  20% {
+    color: orange;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  60% {
+    color: green;
+  }
+
+  80% {
+    color: blue;
+  }
+
+  100% {
+    color: purple;
+  }
+}
+
+@keyframes colorpulse {
+  0% {
+    color: red;
+  }
+
+  20% {
+    color: orange;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  60% {
+    color: green;
+  }
+
+  80% {
+    color: blue;
+  }
+
+  100% {
+    color: purple;
+  }
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.toc:not(:checked)+div {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.not {
+  display: none;
+  height: auto;
+  width: 80%;
+}
+
+.rickyroll {
+  display: block;
+  height: auto;
+  width: 80%;
+}
+
+#completed {
+  background-color: green;
+  height: 20;
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  color: white;
+}
+
+#notcompleted {
+  background-color: gray;
+  height: 20;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  color: white;
+}
