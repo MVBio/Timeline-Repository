@@ -2,6 +2,10 @@
 var completed = 159;
 var total = 310;
 
+let rock = 1;
+let bed = 1;
+let quack = 0;
+
  let paper = 1;
 
  var bodywidth = window.innerWidth;
@@ -220,10 +224,6 @@ var total = 310;
 
 
 
-
-let rock = 1;
-let bed = 1;
-let quack = 0;
 
   // a key map of allowed keys
   var allowedKeys2 = {
