@@ -19,7 +19,7 @@ let quack = 0;
     var antiperc = Math.round(antipercentage * 1000);
     var antipercent = antiperc / 10;
 
-    document.getElementById("completed").style.width = percentage * 100 + '%';
+    document.getElementById('completed').style.width = percentage * 100 + '%';
     document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
 
     document.getElementById("completed").innerText = percent + '%' + '      (of the way to Qingdao)';
