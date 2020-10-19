@@ -129,6 +129,12 @@
         <video id="rickroll" class="not" style="padding: 0 0 100 0" src="https://cdn.kapwing.com/final_5f8402f60a8ebd0050aa887f_617704.mp4"></video></center>
         </div>
       <br id="optional" style="display: none;">
+      <div id="space" style="display: none;">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
       <center id="firstfew">
         Show timeline/age?
         <input type="checkbox" id="myCheck" onclick="sidebarfunction(); mainfunction(); scroll123();">
@@ -3200,6 +3206,7 @@ let quack = 0;
         document.getElementById("rickbutton").style.opacity = "0"
         document.getElementById("rickbutton").style.height = "50";
         document.getElementById("rickbutton").style.width = "50";
+        document.getElementById("space").style.display = "block";
         //document.getElementById("rickbutton").style.zIndex = "1";
       } else {
         vid3.pause();
@@ -3213,6 +3220,7 @@ let quack = 0;
         document.getElementById("rickbutton").style.opacity = "1";
         document.getElementById("rickbutton").style.height = "initial";
         document.getElementById("rickbutton").style.width = "initial";
+        document.getElementById("space").style.display = "none";
         //document.getElementById("rickbutton").style.position = "relative";
       }
     }
