@@ -3228,7 +3228,10 @@ let quack = 0;
   function nomorenicevideo() {
     var vid = document.getElementById("vidplay");
     vid.pause();
+    var vortex = document.getElementById("rickroll")
+    if (vortex.paused === true) {
     document.getElementById("progress").style.display = "block";
+   }
   }
 
 
