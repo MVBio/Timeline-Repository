@@ -3395,21 +3395,16 @@ console.log("bye")
 
     //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
 
-    var rngHeight = getRndInteger(0, screen.height)
+    var rngHeight = getRndInteger(screen.height / 4, 3 * screen.height / 4)
     console.log("height", rngHeight)
-        var rngWidth = getRndInteger(0, screen.width)
+        var rngWidth = getRndInteger(screen.width / 4, 3 * screen.width / 4)
     console.log("width", rngWidth)
 
     function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-
     myWindow.moveTo(rngHeight, rngWidth)
-
-
-
-
 
      setTimeout(increaseTime, coffintime);
   }
