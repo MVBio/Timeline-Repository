@@ -1,102 +1,108 @@
-<title>Timeline</title>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179950591-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-<body id="body">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<script>
-var coffintime = 3000;
-</script>
+    gtag('config', 'UA-179950591-1');
+  </script>
 
-  <!--
-  <link rel="stylesheet" href="TimelineCSS.css">
-  <script src="TimelineJavascript.js"></script>
-  -->
+</head>
+
+
+<body style="height:10000;" onload="email();">
 
   <div id="dark">
     <div id="69">
-      <dl id="bar" class="sidebar">
+      <dl id="bar" class="sidebar" style="background-color:white;">
 
 
-        <div id='2005' style="padding:0 0 0 0;">
+        <div id='2005' style="padding:0 0 0 0; background-color: white;">
           <dt><u>2004 -&nbsp; 0</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2006" style="padding:0 0 0 0;">
+        <div id="2006" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2005 -&nbsp; 1 <br><br style="font-size: 20px;"> 2006 -&nbsp; 2</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2007" style="padding:0 0 0 0;">
+        <div id="2007" style="padding:0 0 0 0; background-color: white;">
           <dt><u style="opacity:0;">2006 -&nbsp; 2</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2008" style="padding:0 0 0 0;">
+        <div id="2008" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2007 -&nbsp; 3</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2009" style="padding:0 0 0 0;">
+        <div id="2009" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2008 -&nbsp; 4</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2010" style="padding:0 0 0 0;">
+        <div id="2010" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2009 -&nbsp; 5</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2011" style="padding:0 0 0 0;">
+        <div id="2011" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2010 -&nbsp; 6</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2012" style="padding:0 0 0 0;">
+        <div id="2012" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2011 -&nbsp; 7</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2013" style="padding:0 0 0 0;">
+        <div id="2013" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2012 -&nbsp; 8</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2014" style="padding:0 0 0 0;">
+        <div id="2014" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2013 -&nbsp; 9</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2015" style="padding:0 0 0 0;">
+        <div id="2015" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2014 -&nbsp; 10</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2016" style="padding:0 0 0 0;">
+        <div id="2016" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2015 -&nbsp; 11</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2017" style="padding:0 0 0 0;">
+        <div id="2017" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2016 -&nbsp; 12</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2018" style="padding:0 0 0 0;">
+        <div id="2018" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2017 -&nbsp; 13</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2019" style="padding:0 0 0 0;">
+        <div id="2019" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2018 -&nbsp; 14</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2020" style="padding:0 0 0 0;">
+        <div id="2020" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2019 -&nbsp; 15</u></dt>
           <dd><br></dd>
         </div>
 
-        <div id="2021" style="padding:0 0 0 0;">
+        <div id="2021" style="padding:0 0 0 0; background-color: white;">
           <dt><u>2020 -&nbsp; 16</u></dt>
           <dd><br></dd>
         </div>
@@ -108,7 +114,9 @@ var coffintime = 3000;
 
 
   <!--
+
 <meta name="viewport" id="booga" content="initial-scale=0.5; maximum-scale=0.5;  user-scalable=0;">
+
 -->
 
   <p id="3" class="69" style="text-align: center; font-size: 200; color: rgb(255, 0, 0);opacity:0.0; display: none; height:1000; width=100%;"></p>
@@ -129,23 +137,19 @@ var coffintime = 3000;
 </div>
 
 <br>
-      <div>
-        <center><button id="rickbutton" onclick="ricky();">Button</button></center>
+      <center><button onclick="ricky();">Button</button></center>
       <center><br id="rickroll2" class="not2" style="display: none;">
-        <video id="rickroll" class="not" style="padding: 0 0 100 0" src="https://cdn.kapwing.com/final_5f8402f60a8ebd0050aa887f_617704.mp4" loop></video></center>
-        </div>
+        <video id="rickroll" class="not" style="padding: 0 0 100 0" src="https://cdn.kapwing.com/final_5f8402f60a8ebd0050aa887f_617704.mp4"></video></center>
       <br id="optional" style="display: none;">
-      <div id="space" style="display: none;">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
       <center id="firstfew">
         Show timeline/age?
         <input type="checkbox" id="myCheck" onclick="sidebarfunction(); mainfunction(); scroll123();">
       </center>
 
+      <center>
+        Show Table of Contents?
+        <input type="checkbox" id="ch1" class="toc" onclick="tableofcontents();" />
+      </center>
       <center id="chot">
         Show chat? (code malachi)
         <input type="checkbox" id="chatCheck" onclick="showChat();">
@@ -156,16 +160,12 @@ var coffintime = 3000;
 <!-- private: https://deadsimplechat.com/yrVil_mm9 -->
 <!-- no private: https://deadsimplechat.com/A-pBHr8KX -->
 
-
   <!-- hitwebcounter Code START -->
-  <!--
   <center> Total Viewers (also counts when I refresh it in code editor)
   <img style="display: block;" src="https://hitwebcounter.com/counter/counter.php?page=7690651&style=0006&nbdigits=5&type=page&initCount=0" title="Total Website Hits" Alt="Web Hits"   border="0" />
   <!-- hitwebcounter Code START -->
-  <!--
 Total Unique Viewers
 <img style="display: block;" src="https://hitwebcounter.com/counter/counter.php?page=7690653&style=0006&nbdigits=5&type=ip&initCount=0" title="Total Website Hits" Alt="Web Hits"   border="0" /></center>
--->
 
 
 
@@ -222,16 +222,14 @@ Total Unique Viewers
 
     <!--
 <button onclick="playvideo()" type="button">Play</button>
+
 <video id="vidplay" width="100" height="100">
 <source src="https://dl.orangedox.com/s/6bLPoRBQ0aBjgMdhhCWr9suioeL34aNt7BZq/video.mp4">
 </video>
 -->
 
-<!--loud - 136ZYlDODNMu-->
-<!--bass - 1kYk70sWinn3-->
-
     <audio id="vidplay" style="display:none;">
-      <source src="https://media1.vocaroo.com/mp3/1kYk70sWinn3">
+      <source src="https://media.vocaroo.com/mp3/nadgJDlrGFI">
     </audio>
 
     <audio id="vidplay2" style="display:none;">
@@ -253,7 +251,7 @@ Total Unique Viewers
 
       <p style="text-indent: 3.0em;">My first memory is getting Pablo. He’s a stuffed penguin from the TV show
 
-        <span><u><i>the Backyardigans</i></u>,</span> <img id="picture" src="https://i.imgur.com/0vO0tvn.jpg" width="800" height="450" />
+        <span><u>the Backyardigans</u>,</span> <img id="picture" src="https://i.imgur.com/0vO0tvn.jpg" width="800" height="450" />
 
         which I loved as a kid. I was 2 years old at this point, and we were in America for a short period of time (but we were living in Qinhuangdao). Apparently, my mom and dad had left my last stuffed animal (a gorilla) behind. We were on some
         long car ride at the time, and when my parents realized they panicked and quickly drove to a nearby store to get another one. I remember choosing between him and a Curious George stuffed animal, and that I chose Pablo because he had more soft
@@ -299,13 +297,7 @@ Total Unique Viewers
 
         <span><u>sunset orange</u>,</span> <img id="picture" src="https://i.imgur.com/TRhtidR.jpg" width="801" height="534" />
 
-        though in the last few months yellow has started to close the gap again. <button onclick="chungus();" style="background-color: red;">
-Button
-</button>
-
-<audio id="coffinsound" style="display: none;" controls loop>
-      <source src="https://media.vocaroo.com/mp3/eotQGxxVOX4">
-    </audio>
+        though in the last few months yellow has started to close the gap again.
 
 
       </p>
@@ -818,9 +810,9 @@ Button
 
         <span><u>we all started dancing</u>.</span> <img id="picture" src="https://i.imgur.com/cWXZsem.jpg" width="700" height="525" />
 
-        Some time after that,
+        Some time after that, the Masseys had to leave.
 
-        <span><u>the Masseys had to leave.</u>.</span> <img id="picture" src="https://i.imgur.com/acUAj100.jpg" width="700" height="525" />
+        <span><u></u></span> <img id="picture" src="https://i.imgur.com/acUAj100.jpg" width="700" height="525" />
 
         One thing that happened this America trip was that I got diagnosed with ADHD. My dad had gotten diagnosed recently, and they wanted to see if I had it too. The doctor asked me a bunch of questions about how easily I dealt with noise, stress,
         and other people in general. I had to wait in the other room for part of the appointment. On the screen in the waiting room, there was a movie playing on one of the screens. (I later identified it as the Spiderwick Chronicles.) I remember
@@ -2679,6 +2671,16 @@ Button
 
         I also remember arguing with Charis/Kesed over who got to hold to phone to take videos of the other performances. (Kesed and Makaria had their regular ones with their Chinese classmates as well).
 
+         For some reason, there is one other memory I link with that performance. In
+
+         <span><u>the lowered canyon area closest to the stairs</u></span> <img id="picture" src="https://i.imgur.com/UwrMNHl.jpg" width="802" height="599.025"/>
+
+         (on the left side in that picture), Charis took
+
+         <span><u>葫芦丝</u></span> <img id="picture" src="https://i.imgur.com/hfScVnU.jpg" width="800" height="638.2"/>
+
+         lessons. She was the only kid to have a full one. Me and maybe one other kid had a shortened, ceramic version. Hers was made from an actual 葫芦. It even had some seeds inside, which you could hear when you shook it around. But back to the lessons. I would always be the one to bring her, but I also was told to stay in the classroom-shop thing until the hour-or-so classes were over. To pass the time, I would find their bug zapper tennis racket thing, find spiderwebs/cobwebs in the corners of the walls, and electrocute the spiders until they fried. Again, not a psycho, it just gave me something to do.
+
 
 
       </p>
@@ -2699,9 +2701,13 @@ Button
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- warriors
+
       </p>
       <br> <br>
+
+
       <p style="text-indent: 3.0em;">
+
 -->
 
     <p>___________________________________________________________________________________________________________</p>
@@ -2721,215 +2727,195 @@ Button
 
 </body>
 
-
 <style>
-p {
-  font-size: 20px;
-  line-height: 1.25;
-}
-
-#bar {
-  font: 30px Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0 0 0 5;
-  display: none;
-}
-
-
-img {
-  display: none;
-  max-width: 100%;
-  height: auto;
-}
-
-span:hover+img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.hidden {
-  display: none margin: none;
-  padding: none;
-  border: none;
-  line-height: 0px;
-}
-
-iframe {
-  margin: none;
-  padding: none;
-  border: none;
-  line-height: 0px;
-}
-
-.myDIV {
-  color: black;
-  font-size: 20px;
-  line-height: 1.25;
-}
-
-
-dl>div {
-  padding: 0px 0 0 0;
-}
-
-dl a {
-  display: block;
-  width: 40px;
-}
-
-dt {
-  font: 30px Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0px 15px 0 10px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 325px;
-  bottom: 375px;
-}
-
-dd {
-  font: 20px/45px Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0 0 0 12px;
-  color: white;
-  opacity: 0;
-}
-
-.yourbg {
-  color: #45CEEF;
-  -webkit-animation: colorpulse 2s infinite alternate;
-  animation: colorpulse 2s infinite alternate;
-}
-
-@-webkit-keyframes colorpulse {
-  0% {
-    color: red;
+  p {
+    font-size: 20px;
+    line-height: 1.25;
   }
 
-  20% {
-    color: orange;
+  #bar {
+    font: 30px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 5;
+    display: none;
   }
 
-  40% {
-    color: yellow;
+
+  img {
+    display: none;
+    max-width: 100%;
+    height: auto;
   }
 
-  60% {
-    color: green;
+  span:hover+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  80% {
-    color: blue;
+  div.hidden {
+    display: none margin: none;
+    padding: none;
+    border: none;
+    line-height: 0px;
   }
 
-  100% {
-    color: purple;
-  }
-}
-
-@keyframes colorpulse {
-  0% {
-    color: red;
+  iframe {
+    margin: none;
+    padding: none;
+    border: none;
+    line-height: 0px;
   }
 
-  20% {
-    color: orange;
+  .myDIV {
+    color: black;
+    font-size: 20px;
+    line-height: 1.25;
   }
 
-  40% {
-    color: yellow;
+
+  dl>div {
+    padding: 0px 0 0 0;
   }
 
-  60% {
-    color: green;
+  dl a {
+    display: block;
+    width: 40px;
   }
 
-  80% {
-    color: blue;
+  dt {
+    font: 30px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0px 15px 0 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 325px;
+    bottom: 375px;
   }
 
-  100% {
-    color: purple;
+  dd {
+    font: 20px/45px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    color: white;
+    opacity: 0;
   }
-}
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
+  .yourbg {
+    color: #45CEEF;
+    -webkit-animation: colorpulse 2s infinite alternate;
+    animation: colorpulse 2s infinite alternate;
+  }
 
-.toc:not(:checked)+div {
-  max-height: 0;
-  overflow: hidden;
-}
+  @-webkit-keyframes colorpulse {
+    0% {
+      color: red;
+    }
 
-.not {
-  display: none;
-  width: auto;
-  height: 100%;
-  max-width: 100%;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+    20% {
+      color: orange;
+    }
 
-.rickyroll {
-  display: block;
-  width: auto;
-  height: 100%;
-  max-width: 100%;
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+    40% {
+      color: yellow;
+    }
 
-#rickbutton {
- position: relative;
-}
+    60% {
+      color: green;
+    }
 
-button:focus {outline:0;}
+    80% {
+      color: blue;
+    }
 
-#completed {
-  background-color: green;
-  height: 20;
-  float: left;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  text-align: left;
-  color: white;
-}
+    100% {
+      color: purple;
+    }
+  }
 
-#notcompleted {
-  background-color: gray;
-  height: 20;
-  float: right;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  text-align: right;
-  color: white;
-}
+  @keyframes colorpulse {
+    0% {
+      color: red;
+    }
+
+    20% {
+      color: orange;
+    }
+
+    40% {
+      color: yellow;
+    }
+
+    60% {
+      color: green;
+    }
+
+    80% {
+      color: blue;
+    }
+
+    100% {
+      color: purple;
+    }
+  }
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .toc:not(:checked)+div {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .not {
+    display: none;
+    height: auto;
+    width: 80%;
+  }
+
+  .rickyroll {
+    display: block;
+    height: auto;
+    width: 80%;
+  }
+
+  #completed {
+    background-color: green;
+    height: 20;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    color: white;
+  }
+
+  #notcompleted {
+    background-color: gray;
+    height: 20;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: right;
+    color: white;
+  }
+
 </style>
 
-<script>
-var completed = 159;
-var total = 310;
 
-let rock = 1;
-let bed = 1;
-let quack = 0;
+<script>
+
+var completed = 159;
+ var total = 310;
 
  let paper = 1;
 
  var bodywidth = window.innerWidth;
 
-    var percentage = completed / total ;
+    var percentage = completed / total;
     var antipercentage = 1 - percentage;
 
     var perc = Math.round(percentage * 1000);
@@ -2938,7 +2924,7 @@ let quack = 0;
     var antiperc = Math.round(antipercentage * 1000);
     var antipercent = antiperc / 10;
 
-    document.getElementById('completed').style.width = percentage * 100 + '%';
+    document.getElementById("completed").style.width = percentage * 100 + '%';
     document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
 
     document.getElementById("completed").innerText = percent + '%' + '      (of the way to Qingdao)';
@@ -3058,11 +3044,8 @@ let quack = 0;
     // If the checkbox is checked, display the output text
     if (chatCheck.checked == true) {
       chat.style.display = "block";
-      document.getElementById("2005").style.padding = "2750 0 0 0";
-
     } else {
       chat.style.display = "none";
-      document.getElementById("2005").style.padding = "2250 0 0 0";
     }
   }
 
@@ -3147,6 +3130,10 @@ let quack = 0;
 
 
 
+let rock = 1;
+let bed = 1;
+let quack = 0;
+
   // a key map of allowed keys
   var allowedKeys2 = {
     52: '4',
@@ -3225,13 +3212,6 @@ let quack = 0;
         document.getElementById("rickroll2").style.display = "none";
         document.getElementById("progress").style.display = "none";
         document.getElementById("optional").style.display = "block";
-        document.getElementById("2005").style.padding = "2250 0 0 0";
-        document.getElementById("optional").style.fontSize = "700";
-        document.getElementById("rickbutton").style.opacity = "0"
-        document.getElementById("rickbutton").style.height = "50";
-        document.getElementById("rickbutton").style.width = "50";
-        document.getElementById("space").style.display = "block";
-        //document.getElementById("rickbutton").style.zIndex = "1";
       } else {
         vid3.pause();
         pressed2();
@@ -3239,13 +3219,7 @@ let quack = 0;
         document.getElementById("rickroll2").style.display = "none";
         document.getElementById("progress").style.display = "block";
         document.getElementById("optional").style.display = "none";
-        document.getElementById("2005").style.padding = "0 0 0 0";
-        document.getElementById("optional").style.fontSize = "inherit"
-        document.getElementById("rickbutton").style.opacity = "1";
-        document.getElementById("rickbutton").style.height = "initial";
-        document.getElementById("rickbutton").style.width = "initial";
-        document.getElementById("space").style.display = "none";
-        //document.getElementById("rickbutton").style.position = "relative";
+
       }
     }
 
@@ -3283,10 +3257,6 @@ let quack = 0;
   function nomorenicevideo() {
     var vid = document.getElementById("vidplay");
     vid.pause();
-    var vortex = document.getElementById("rickroll")
-    if (vortex.paused === true) {
-    document.getElementById("progress").style.display = "block";
-   }
   }
 
 
@@ -3350,66 +3320,8 @@ let quack = 0;
 
   function darkmode() {
     var element = document.body;
-    var bore = document.getElementById(bar)
     element.classList.toggle("dark-mode");
-    bore.classList.toggle("dark-mode");
   }
-
-  function update() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-
-let size = 10;
-let hat = 0;
-
-function chungus() {
- var hat = 1;
- var bur = document.getElementById('coffinsound');
- bur.play();
- console.log("hi")
- console.log(hat)
-
-function increaseTime() {
-
-console.log("bye")
-
-
-  var myWindow = window.open("", "", "width=640,height=360");
-
-    myWindow.document.body.innerHTML = "<video id='smar' src='https://cdn.kapwing.com/final_5f8e25245be95700d98c5f5d_196179.mp4' style='width:640; height:360; position:absolute; top:0; left:0;' autoplay muted loop></video>"
-
-
-    //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
-
-    var rngHeight = getRndInteger(0, screen.height)
-    console.log("height", rngHeight)
-        var rngWidth = getRndInteger(0, screen.width)
-    console.log("width", rngWidth)
-
-    function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
-
-    myWindow.moveTo(rngHeight, rngWidth)
-
-
-
-
-
-     setTimeout(increaseTime, coffintime);
-  }
-
-  increaseTime();
-  }
-
-
-
-
-
 
 
 
