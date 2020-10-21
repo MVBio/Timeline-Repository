@@ -3057,7 +3057,7 @@ let quack = 0;
 
     var bodyrect2006 = document.body.getBoundingClientRect();
     var rect2006 = document.getElementById('2006.tag').getBoundingClientRect();
-    var calc2006 = rect2006.top - bodyrect2006.y;
+    var calc2006 = rect2006.top;
     var height2006 = calc2006 - calc2005 + "px";
     document.getElementById('2006').style.height = height2006;
     console.log(calc2006)
