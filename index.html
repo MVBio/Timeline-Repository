@@ -1,6 +1,6 @@
 <title>Timeline</title>
 
-<body id="body">
+<body id="body" onscroll="scroll123();">
 
 <script>
 var completed = 178;
@@ -17,20 +17,24 @@ var coffintime = 2000;
   <div id="dark">
     <div id="69">
       <dl id="bar" class="sidebar">
+          
+        <div id="2003" style="padding:0 0 0 0;">
+          <dt></dt>
+          <dd><br></dd>
+        </div>
 
-
-        <div id="2004" style="padding:100 0 0 0;">
-          <dt><u style="position: relative;">2004 -&nbsp; 0</u></dt>
+        <div id="2004" style="padding:0 0 0 0;">
+          <dt><u>2004 -&nbsp; 0</u></dt>
           <dd><br></dd>
         </div>
 
         <div id="2005" style="padding:0 0 0 0;">
-          <dt><u style="position: relative;">2005 -&nbsp; 1</u></dt>
+          <dt><u>2005 -&nbsp; 1</u></dt>
           <dd><br></dd>
         </div>
 
         <div id="2006" style="padding:0 0 0 0;">
-          <dt><u style="position: relative;">2006 -&nbsp; 2</u></dt>
+          <dt><u>2006 -&nbsp; 2</u></dt>
           <dd><br></dd>
         </div>
 
@@ -145,7 +149,7 @@ var coffintime = 2000;
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
       <center id="firstfew">
-        Show timeline/age?
+        Show timeline/age?<tag id="2003.tag"></tag>
         <input type="checkbox" id="myCheck" onclick="sidebarfunction(); mainfunction(); scroll123();">
       </center>
 
@@ -933,7 +937,7 @@ WARNING: DO NOT PRESS
 
         <span><u>the skit</u></span> <img id="picture" src="https://i.imgur.com/FFqGMpR.jpg" width="800" height="600"/>
 
-        was me trying hard not to laugh and saying "baby Jesus has diaper rash!" So that was<tag id="2011.tag">Christmas.</tag>
+        was me trying hard not to laugh and saying "baby Jesus has diaper rash!" So that was<tag id="2011.tag"> Christmas.</tag>
 
         Somewhere around that time I got bottles of this special bubble fluid that made its bubbles sticky. That was super cool to me. Since all of us kids were in some stage of learning to ride a bike, it was not uncommon of us to go round and round
         the circular driveway, each on our own vehicle. We would most often take baths in our grandparent's room, because that was the only bath bath in the house. At that age
@@ -2356,7 +2360,7 @@ public swimming pool.
         <span onmouseover="ontext28()"><u>full on dancing the whole time</u>.</span> (Here I'm in the red shirt going from the mid-left to the far right.)
 
         <span class="hidden" style="text-align:center;" id="myDIV28">
-          <iframe style="font-size:" 0"; width="800" height="450" onmouseover="onvideo28()" onload="offvideo28()" onmouseout="offvideo28()" src="https://drive.google.com/file/d/1mIYclKwf5uTrgNqhEXITaaks0Ukp_2tF/preview" width="800"
+          <iframe onmouseover="onvideo28()" onload="offvideo28()" onmouseout="offvideo28()" src="https://drive.google.com/file/d/1mIYclKwf5uTrgNqhEXITaaks0Ukp_2tF/preview" width="800"
             height="450"></iframe>
         </span>
 
@@ -3040,6 +3044,10 @@ let quack = 0;
     document.getElementById("notcompleted").innerText = antipercent + '%' + " ";
 
   function scroll123() {
+      
+    var bodyrect2003 = document.body.getBoundingClientRect();
+    var rect2003 = document.getElementById('2003.tag').getBoundingClientRect();
+    var calc2003 = rect2003.top - bodyrect2003.y;
 
     var bodyrect2004 = document.body.getBoundingClientRect();
     var rect2004 = document.getElementById('2004.tag').getBoundingClientRect();
@@ -3113,6 +3121,9 @@ let quack = 0;
     var rect2021 = document.getElementById('2021.tag').getBoundingClientRect();
     var calc2021 = rect2021.top - bodyrect2021.y;
     
+    var full2003 = calc2004 - calc2003;
+    document.getElementById('2003').style.height = full2003 + "px";
+    console.log(full2004)
     
     var full2004 = calc2005 - calc2004;
     document.getElementById('2004').style.height = full2004 + "px";
