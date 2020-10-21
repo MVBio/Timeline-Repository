@@ -19,7 +19,7 @@ var coffintime = 2000;
       <dl id="bar" class="sidebar">
 
 
-        <div id="2004" style="padding:0 0 0 0;">
+        <div id="2004" style="padding:100 0 0 0;">
           <dt><u style="position: relative;">2004 -&nbsp; 0</u></dt>
           <dd><br></dd>
         </div>
@@ -931,14 +931,14 @@ WARNING: DO NOT PRESS
         It's the first time I remember being dressed in fancy clothes. I remember two things about that Christmas. First, I remember being fascinated with how a nutcracker doll worked. Second, I remember being paired with Uncle Mike and my dad in an
         activity where we got random props and had to come up with a Christmas skit. We got a few hats and some baby powder. The only thing I remember from
 
-        <span><u>the skit</u></span> <img id="picture" src="https://i.imgur.com/FFqGMpR.jpg" width="800" height="600" />
+        <span><u>the skit</u></span> <img id="picture" src="https://i.imgur.com/FFqGMpR.jpg" width="800" height="600"/>
 
-        was me trying hard not to laugh and saying "baby Jesus has diaper rash!" So that was Christmas<tag id="2011.tag">.</tag>
+        was me trying hard not to laugh and saying "baby Jesus has diaper rash!" So that was<tag id="2011.tag">Christmas.</tag>
 
         Somewhere around that time I got bottles of this special bubble fluid that made its bubbles sticky. That was super cool to me. Since all of us kids were in some stage of learning to ride a bike, it was not uncommon of us to go round and round
         the circular driveway, each on our own vehicle. We would most often take baths in our grandparent's room, because that was the only bath bath in the house. At that age
 
-        <span><u>we would still take them together</u>,</span> <img id="picture" src="https://i.imgur.com/0ivQWbI.jpg" width="650" height="450" />
+        <span><u>we would still take them together</u>,</span> <img id="picture" src="https://i.imgur.com/0ivQWbI.jpg" width="650" height="450"/>
 
         and we would always put in tons of bubble bath stuff. Late January 2011, the McKowns had to leave. I was super sad. I remember how we ate Freebirds (burritos) then
 
@@ -2785,7 +2785,7 @@ public swimming pool.
 
 
 
-      <tag id="2014.tag"><br></tag><br>
+      <tag id="2014.tag"></tag><tag id="2015.tag"></tag><tag id="2016.tag"></tag><tag id="2017.tag"></tag><tag id="2018.tag"></tag><tag id="2019.tag"></tag><tag id="2020.tag"></tag><tag id="2021.tag"></tag><br><br>
 
     </div>
 
@@ -3041,110 +3041,133 @@ let quack = 0;
 
   function scroll123() {
 
-   var bodyrect2004 = document.body.getBoundingClientRect();
+    var bodyrect2004 = document.body.getBoundingClientRect();
     var rect2004 = document.getElementById('2004.tag').getBoundingClientRect();
-    var calc2004 = rect2004.top;
-    var height2004 = calc2004 + "px";
-    document.getElementById('2004').style.height = height2004;
-    console.log(calc2004)
-
+    var calc2004 = rect2004.top - bodyrect2004.y;
+    
     var bodyrect2005 = document.body.getBoundingClientRect();
     var rect2005 = document.getElementById('2005.tag').getBoundingClientRect();
-    var calc2005 = rect2005.top;
-    var height2005 = calc2005 - calc2004 + "px";
-    document.getElementById('2005').style.height = height2005;
-    console.log(calc2005)
-
+    var calc2005 = rect2005.top - bodyrect2005.y;
+    
     var bodyrect2006 = document.body.getBoundingClientRect();
     var rect2006 = document.getElementById('2006.tag').getBoundingClientRect();
-    var calc2006 = rect2006.top;
-    var height2006 = calc2006 - calc2005 + "px";
-    document.getElementById('2006').style.height = height2006;
-    console.log(calc2006)
-
+    var calc2006 = rect2006.top - bodyrect2006.y;
+    
     var bodyrect2007 = document.body.getBoundingClientRect();
     var rect2007 = document.getElementById('2007.tag').getBoundingClientRect();
     var calc2007 = rect2007.top - bodyrect2007.y;
-    var height2007 = calc2007 - calc2006 + "px";
-    document.getElementById('2007').style.height = height2007;
-
+    
     var bodyrect2008 = document.body.getBoundingClientRect();
     var rect2008 = document.getElementById('2008.tag').getBoundingClientRect();
     var calc2008 = rect2008.top - bodyrect2008.y;
-    var height2008 = calc2008 - calc2007 + "px";
-    document.getElementById('2008').style.height = height2008;
-
+    
     var bodyrect2009 = document.body.getBoundingClientRect();
     var rect2009 = document.getElementById('2009.tag').getBoundingClientRect();
     var calc2009 = rect2009.top - bodyrect2009.y;
-    var height2009 = calc2009 - calc2008 + "px";
-    document.getElementById('2009').style.height = height2009;
-
+    
     var bodyrect2010 = document.body.getBoundingClientRect();
     var rect2010 = document.getElementById('2010.tag').getBoundingClientRect();
     var calc2010 = rect2010.top - bodyrect2010.y;
-    var height2010 = calc2010 - calc2009 + "px";
-    document.getElementById('2010').style.height = height2010;
-
+    
     var bodyrect2011 = document.body.getBoundingClientRect();
     var rect2011 = document.getElementById('2011.tag').getBoundingClientRect();
     var calc2011 = rect2011.top - bodyrect2011.y;
-    var height2011 = calc2011 - calc2010 + "px";
-    document.getElementById('2011').style.height = height2011;
-
+    
     var bodyrect2012 = document.body.getBoundingClientRect();
     var rect2012 = document.getElementById('2012.tag').getBoundingClientRect();
     var calc2012 = rect2012.top - bodyrect2012.y;
-    var height2012 = calc2012 - calc2011 + "px";
-    document.getElementById('2012').style.height = height2012;
-
+    
     var bodyrect2013 = document.body.getBoundingClientRect();
     var rect2013 = document.getElementById('2013.tag').getBoundingClientRect();
     var calc2013 = rect2013.top - bodyrect2013.y;
-    var height2013 = calc2013 - calc2012 + "px";
-    document.getElementById('2013').style.height = height2013;
-
+    
     var bodyrect2014 = document.body.getBoundingClientRect();
     var rect2014 = document.getElementById('2014.tag').getBoundingClientRect();
     var calc2014 = rect2014.top - bodyrect2014.y;
-    var height2014 = calc2014 - calc2013 + "px";
-    document.getElementById('2014').style.height = height2014;
-
+    
     var bodyrect2015 = document.body.getBoundingClientRect();
     var rect2015 = document.getElementById('2015.tag').getBoundingClientRect();
     var calc2015 = rect2015.top - bodyrect2015.y;
-    var height2015 = calc2015 - calc2014 + "px";
-    document.getElementById('2015').style.height = height2015;
-
+    
     var bodyrect2016 = document.body.getBoundingClientRect();
     var rect2016 = document.getElementById('2016.tag').getBoundingClientRect();
     var calc2016 = rect2016.top - bodyrect2016.y;
-    var height2016 = calc2016 - calc2015 + "px";
-    document.getElementById('2016').style.height = height2016;
-
+    
     var bodyrect2017 = document.body.getBoundingClientRect();
     var rect2017 = document.getElementById('2017.tag').getBoundingClientRect();
     var calc2017 = rect2017.top - bodyrect2017.y;
-    var height2017 = calc2017 - calc2016 + "px";
-    document.getElementById('2017').style.height = height2017;
-
+    
     var bodyrect2018 = document.body.getBoundingClientRect();
     var rect2018 = document.getElementById('2018.tag').getBoundingClientRect();
     var calc2018 = rect2018.top - bodyrect2018.y;
-    var height2018 = calc2018 - calc2017 + "px";
-    document.getElementById('2018').style.height = height2018;
-
+    
     var bodyrect2019 = document.body.getBoundingClientRect();
     var rect2019 = document.getElementById('2019.tag').getBoundingClientRect();
     var calc2019 = rect2019.top - bodyrect2019.y;
-    var height2019 = calc2019 - calc2018 + "px";
-    document.getElementById('2019').style.height = height2019;
-
+    
     var bodyrect2020 = document.body.getBoundingClientRect();
     var rect2020 = document.getElementById('2020.tag').getBoundingClientRect();
     var calc2020 = rect2020.top - bodyrect2020.y;
-    var height2020 = calc2020 - calc2019 + "px";
-    document.getElementById('2020').style.height = height2020;
+    
+    var bodyrect2021 = document.body.getBoundingClientRect();
+    var rect2021 = document.getElementById('2021.tag').getBoundingClientRect();
+    var calc2021 = rect2021.top - bodyrect2021.y;
+    
+    
+    var full2004 = calc2005 - calc2004;
+    document.getElementById('2004').style.height = full2004 + "px";
+    console.log(full2004)
+
+    var full2005 = calc2006 - full2005;
+    document.getElementById('2005').style.height = full2005 + "px";
+    console.log(calc2005, rect2005.top, bodyrect2005.y)
+
+    var full2006 = calc2007 - calc2006;
+    document.getElementById('2006').style.height = full2006 + "px";
+    console.log(full2006)
+
+    var full2007 = calc2008 - calc2007;
+    document.getElementById('2007').style.height = full2007 + "px";
+    console.log(full2007)
+
+    var full2008 = calc2009 - calc2008;
+    document.getElementById('2008').style.height = full2008 + "px";
+
+    var full2009 = calc2010 - calc2009;
+    document.getElementById('2009').style.height = full2009 + "px";
+
+    var full2010 = calc2011 - calc2010;
+    document.getElementById('2010').style.height = full2010 + "px";
+
+    var full2011 = calc2012 - calc2011;
+    document.getElementById('2011').style.height = full2011 + "px";
+
+    var full2012 = calc2013 - calc2012;
+    document.getElementById('2012').style.height = full2012 + "px";
+
+    var full2013 = calc2014 - calc2013;
+    document.getElementById('2013').style.height = full2013 + "px";
+
+    var full2014 = calc2015 - calc2014;
+    document.getElementById('2014').style.height = full2014 + "px";
+
+    var full2015 = calc2016 - calc2015;
+    document.getElementById('2015').style.height = full2015 + "px";
+
+    var full2016 = calc2017 - calc2016;
+    document.getElementById('2016').style.height = full2016 + "px";
+
+    var full2017 = calc2018 - calc2017;
+    document.getElementById('2017').style.height = full2017 + "px";
+
+    var full2018 = calc2019 - calc2018;
+    document.getElementById('2018').style.height = full2018 + "px";
+
+    var full2019 = calc2020 - calc2019;
+    document.getElementById('2019').style.height = full2019 + "px";
+
+    var full2020 = calc2021 - calc2020;
+    document.getElementById('2020').style.height = full2020 + "px";
  
   }
 
