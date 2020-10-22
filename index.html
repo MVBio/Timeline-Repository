@@ -1,6 +1,6 @@
 <title>Timeline</title>
 
-<body id="body">
+<body id="body" onload="show();">
 
 <script>
 var completed = 178;
@@ -3202,6 +3202,10 @@ let quack = 0;
   }
 
 let vary = 0; 
+
+function show() {
+document.getElementById("progress").style.display = "block";
+} 
 
 function fixpopups() {
  
