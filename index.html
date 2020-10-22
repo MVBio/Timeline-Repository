@@ -3209,17 +3209,17 @@ document.getElementById("progress").style.display = "block";
 } 
 
 function fixpopups2() { 
-  vary++
 
   var myWindow5 = window.open("", "", "width=640,height=360");
 
-    myWindow5.document.body.innerHTML = "<img src='https://i.imgur.com/4xLptit.jpg'>"
+  myWindow5.moveTo(screen.innerWidth / 2 , screen.innerHeight / 2)
 
+
+    myWindow5.document.body.innerHTML = "<p><img src='https://i.imgur.com/4xLptit.jpg'></p>"
 
     //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
 
-     myWindow5.moveTo(window.innerWidth / 2 , window.innerHeight / 2)
-}
+   }
 
   function mainfunction() {
     // Get the checkbox
