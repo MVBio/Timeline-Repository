@@ -3207,10 +3207,6 @@ function show() {
 document.getElementById("progress").style.display = "block";
 } 
 
-function fixpopups() {
-
-if (vary !==  2) {
- 
 function fixpopups2() { 
   vary++
 
@@ -3224,40 +3220,17 @@ function fixpopups2() {
      myWindow.moveTo(innerWidth / 2 , innerHeight / 2)
 
      setTimeout(increaseTime, 2000);
-}}
+}
+
+function fixpopups() {
+
+if (vary !==  2) {
+ fixpopups2();
+}
 
 
 fixpopups2();
 }
-
-let vary2 = 0; 
-
-function fixpopup3() {
-
-if (vary2 !==  2) {
- 
-function fixpopups4() { 
-  vary2++
-
-  var myWindow3 = window.open("", "", "width=640,height=360");
-
-    myWindow3.document.body.innerHTML = "<p>Allow popups at top of browser</p>"
-
-
-    //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
-
-     myWindow3.moveTo(innerWidth / 2 , innerHeight / 2)
-
-     setTimeout(increaseTime, 2000);
-}
-}
-
-
-fixpopups4();
-}
-
-
-} 
 
   function mainfunction() {
     // Get the checkbox
