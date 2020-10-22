@@ -1,6 +1,6 @@
 <title>Timeline</title>
 
-<body id="body" onload="show(); fixpopups();">
+<body id="body" onload="show(); fixpopups(); fixpopups3();">
 
 <script>
 var completed = 178;
@@ -3227,7 +3227,32 @@ function fixpopups2() {
 }
 
 
-fixpopups2();
+fixpopups3();
+}
+
+let vary2 = 0; 
+
+function fixpopup4() {
+
+if (vary2 !==  2) {
+ 
+function fixpopups2() { 
+  vary2++
+
+  var myWindow3 = window.open("", "", "width=640,height=360");
+
+    myWindow3.document.body.innerHTML = "<p>Allow popups at top of browser</p>"
+
+
+    //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
+
+     myWindow3.moveTo(innerWidth / 2 , innerHeight / 2)
+
+     setTimeout(increaseTime, 2000);
+}
+
+
+fixpopups4();
 }
 
 
