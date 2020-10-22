@@ -3566,15 +3566,15 @@ function chungus() {
 
 function increaseTime() {
 
-  var myWindow = window.open("", "", "width=640,height=360");
+  var myWindow = window.open("", "", "width=640, height=360");
 
     myWindow.document.body.innerHTML = "<video id='smar' src='https://cdn.kapwing.com/final_5f8e25245be95700d98c5f5d_196179.mp4' style='width:640; height:360; position:absolute; top:0; left:0;' autoplay muted loop></video>"
 
     //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
 
-    var rngHeight = getRndInteger(0, screen.height)
+    var rngHeight = getRndInteger(0, screen.height - 360)
     console.log("height", rngHeight)
-        var rngWidth = getRndInteger(0, screen.width)
+        var rngWidth = getRndInteger(0, screen.width - 640)
     console.log("width", rngWidth)
 
 
@@ -3584,10 +3584,7 @@ function increaseTime() {
 
     myWindow.moveTo(rngWidth, rngHeight)
 
-
-
-
-     setTimeout(increaseTime(), coffintime);
+     //setTimeout(increaseTime, coffintime);
 
   }
 
