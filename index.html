@@ -3208,6 +3208,8 @@ document.getElementById("progress").style.display = "block";
 } 
 
 function fixpopups() {
+
+if (vary !==  2) {
  
 function fixpopups2() { 
   vary++
@@ -3219,12 +3221,12 @@ function fixpopups2() {
 
     //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
 
-
+     myWindow.moveTo(innerWidth / 2 , innerHeight / 2)
 
      setTimeout(increaseTime, 2000);
 }
 
-if (vary !==  2) {
+
 fixpopups2();
 }
 
