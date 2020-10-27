@@ -2,27 +2,24 @@
 
 <script>
 
-let keepScore = 0;
 
-  var gloves = document.getElementById("boxing")
-gloves.innerText = keepScore;
+  let keepScore = 0;
 
-var winny = window.innerWidth - 50
-var hinny = window.innerHeight - 50 
-
-function randomMove() {
-  var texting = Math.floor(Math.random() * winny) + 50;
-  var talking = Math.floor(Math.random() * hinny) + 50;
-
-  keepScore++
+    document.getElementById("boxing").innerText = keepScore;
 
 
-  var squareRoot = document.getElementById("movingSquare")
-  squareRoot.style.left = texting;
-  squareRoot.style.top = talking;
+  function randomMove() {
+    var texting = Math.floor(Math.random() * window.innerWidth - 50) + 50;
+    var talking = Math.floor(Math.random() * window.innerHeight - 50) + 50;
 
-  gloves.innerText = keepScore;
-}
+    keepScore++
+
+
+    document.getElementById("movingSquare").style.left = texting;
+    document.getElementById("movingSquare").style.top = talking;
+
+    document.getElementById("boxing").innerText = keepScore;
+  }
 </script>
 
 <body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible();">
