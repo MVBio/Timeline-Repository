@@ -1,8 +1,11 @@
 <title>Timeline</title>
 
-Loading...
 
-<body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible();" style="display: none;">
+
+<body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible();">
+<div id="antimatter">Loading...</div>
+
+<div id="atoms" style="display: none;">
 
 <script>
 var completed = 207;
@@ -2963,7 +2966,7 @@ Ladybug Corollo conference
 
 
 
-
+</div>
 
 </body>
 
@@ -3458,6 +3461,9 @@ document.getElementById("progress").style.display = "block";
 } 
 
 function fixpopups2() { 
+
+ document.getElementById("atoms").style.display = "block";
+ document.getElementById("antimatter").style.display = "none";
 
   var myWindow5 = window.open("https://i.imgur.com/4xLptit.jpg", "", "width=640,height=360");
 
@@ -3967,7 +3973,7 @@ console.log(h2)
   }
 
 function tada() {
- document.getElementById("body").style.display = "block";
+
 } 
 
 
