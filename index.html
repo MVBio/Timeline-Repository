@@ -2,14 +2,9 @@
 
 <script>
 
-
   let keepScore = 0;
 
     document.getElementById("boxing").innerText = keepScore;
-
-  function showtime() {
-    document.getElementById("boxing").innerText = "Go"
-} 
 
 
   function randomMove() {
@@ -29,7 +24,7 @@
 <body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible();">
 
 <div id="antimatter">Loading...
-<div id="movingSquare" onload="showtime();" onmouseover="randomMove();" style="height: 50; width: 50; background-color: red; position: absolute;">
+<div id="movingSquare" onmouseover="randomMove();" style="height: 50; width: 50; background-color: red; position: absolute;">
 <center><div id="boxing" style="padding: 15 0 0 0"></div></center>
 
 </div>
