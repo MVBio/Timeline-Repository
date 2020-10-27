@@ -3,12 +3,12 @@
 
 
 <body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible();">
+
 <div id="antimatter">Loading...
+<div id="movingSquare" onmouseover="randomMove();" style="height: 50; width: 50; background-color: red; position: absolute;">
+<center><div id="boxing" style="padding: 15 0 0 0"></div></center>
 
-<iframe src="https://www.openprocessing.org/sketch/47481/embed/" width="800" height="600" style="position: absolute; top: -50px; text-align: center;"></iframe>
-
-
-
+</div>
 </div>
 
 <div id="atoms" style="display: none;">
@@ -3940,9 +3940,26 @@ console.log(h2)
   }
   }
 
-function tada() {
 
-} 
+let keepScore = 0;
+
+  var gloves = document.getElementById("boxing")
+gloves.innerText = keepScore;
+
+function randomMove() {
+  var texting = Math.floor(Math.random() * window.innerWidth) + 50;
+  var talking = Math.floor(Math.random() * window.innerHeight) + 50;
+
+  keepScore++
+
+
+  var squareRoot = document.getElementById("movingSquare")
+  squareRoot.style.left = texting;
+  squareRoot.style.top = talking;
+
+  gloves.innerText = keepScore;
+}
+ 
 
 
 
