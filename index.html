@@ -1,6 +1,8 @@
 <title>Timeline</title>
 
-<body id="body" onload="show(); fixpopups2();" onresize="flexible();">
+Loading...
+
+<body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible();" style="display: none;">
 
 <script>
 var completed = 207;
@@ -179,7 +181,7 @@ Total Unique Viewers
     
 
     <!-- countdown -->
-    <p>Pictures: 402; Videos: 33; Pics: <tag id="counting" style="display: inline-block;"> </tag></p>
+    <p>Pictures: 402; Videos: 33; Pics: <tag id="counting" style="display: inline-block;"> ...</tag></p>
     <p>Currently at: September 2013</p>
     <p>(Enable popups at top of screen if none have already appeared) <img src="https://i.imgur.com/B78IwpV.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/aYdX0Hj.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/eZvEtHH.jpg" style="display: inline-block; height: 24px; width: auto;"></p>
     <a id="2005.tag"> </a>
@@ -3963,6 +3965,10 @@ console.log(h2)
 
   }
   }
+
+function tada() {
+ document.getElementById("body").style.display = "block";
+} 
 
 
 
