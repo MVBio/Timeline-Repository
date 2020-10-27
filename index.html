@@ -7,9 +7,12 @@ let keepScore = 0;
   var gloves = document.getElementById("boxing")
 gloves.innerText = keepScore;
 
+var winny = window.innerWidth - 50
+var hinny = window.innerHeight - 50 
+
 function randomMove() {
-  var texting = Math.floor(Math.random() * window.innerWidth) + 50;
-  var talking = Math.floor(Math.random() * window.innerHeight) + 50;
+  var texting = Math.floor(Math.random() * winny) + 50;
+  var talking = Math.floor(Math.random() * hinny) + 50;
 
   keepScore++
 
@@ -3965,7 +3968,7 @@ console.log(h2)
 
 
 
-//booey
+//onmouseover="scroll123(); flexible();"
 
 
   function ontext() {
