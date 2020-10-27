@@ -1,6 +1,6 @@
 <title>Timeline</title>
 
-<body id="body" onload="show(); fixpopups2();">
+<body id="body" onload="show(); fixpopups2(); flexible();" onresize="flexible();">
 
 <script>
 var completed = 207;
@@ -2937,7 +2937,6 @@ p {
 
 img {
   display: none;
-  height: auto;
 }
 
 .picture {
@@ -3865,17 +3864,40 @@ chungus();
  }
 }
 
-var picto  = document.getElementByClassName("picture")
-var w = window.innerWidth
-var h = window.innerHeight
-picto.style.maxWidth = w * 0.75 + "px !important";
-picto.style.maxHeight = h * 0.75 + "px !important";
-
 
 var vampire = document.images.length;
-document.getElementById("counting").innerText = vampire;
+document.getElementById("counting").innerHTML = vampire;
 
+function flexible() {
 
+var w = window.innerWidth
+var h = window.innerHeight
+
+var w2 = 0.75 * w;
+var h2 = 0.75 * h;
+
+  var picto = document.getElementsByClassName("picture");
+  var i;
+  for (i = 0; i < picto.length; i++) {
+  
+  var tempheight = picto[i].height;
+  var tempwidth = picto[i].width;
+  
+  
+  
+  if (tempheight > tempwidth) {
+  
+  var aspect = tempwidth / tempheight;
+  picto[i].height = h2;
+  picto[i].width = h2 * aspect;
+  } else {
+  
+  var aspect = tempheight / tempwidth;
+  picto[i].width = w2;
+  picto[i].height = w2 * aspect;
+  }
+ }
+}
 
 
 
