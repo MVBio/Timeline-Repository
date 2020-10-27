@@ -2937,7 +2937,8 @@ p {
 
 img {
   display: none;
-  max-width: 100%;
+  max-width: 75%;
+  max-height: 75%;
   height: auto;
 }
 
@@ -3240,7 +3241,8 @@ let milk = 0;
     document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
 
     document.getElementById("completed").innerText = " " + percent + '%' + ' done with Fuzhou, on the way to Qingdao';
-    document.getElementById("notcompleted").innerText = antipercent + '%' + " ";
+    document.getElementById("completed").innerText.fontSize = "15px";    document.getElementById("notcompleted").innerText = antipercent + '%' + " ";
+document.getElementById("notcompleted").innerText.style.fontSize = "15px";
 
   function scroll123() {
       
