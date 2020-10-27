@@ -3396,8 +3396,10 @@ document.getElementById("notcompleted").innerText.style.fontSize = "15px";
       text.style.float = "right";
       text.style.width = "15%";
       text.style.height = "0px";
+      var n = 0.6
     } else {
       text.style.display = "none";
+      var n = 0.75 
     }
   }
 
@@ -3873,8 +3875,8 @@ function flexible() {
 var w = window.innerWidth
 var h = window.innerHeight
 
-var w2 = 0.75 * w;
-var h2 = 0.75 * h;
+var w2 = n * w;
+var h2 = n * h;
 
 console.log(w2)
 console.log(h2)
