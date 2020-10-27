@@ -128,7 +128,7 @@ Total Unique Viewers
     
 
     <!-- countdown -->
-    <p>Pictures: 402; Videos: 33; Pics: <div id="counting"></div></p>
+    <p>Pictures: 402; Videos: 33; Pics: <tag id="counting" style="display: inline-block;"></tag></p>
     <p>Currently at: September 2013</p>
     <p>(Enable popups at top of screen if none have already appeared) <img src="https://i.imgur.com/B78IwpV.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/aYdX0Hj.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/eZvEtHH.jpg" style="display: inline-block; height: 24px; width: auto;"></p>
     <a id="2005.tag"> </a>
@@ -3882,11 +3882,12 @@ var h2 = 0.75 * h;
   var aspect = tempwidth / tempheight;
   picto[i].height = h2;
   picto[i].width = h2 * aspect;
+
   } else {
   
-  var aspect = tempheight / tempwidth;
+  var aspect2 = tempheight / tempwidth;
   picto[i].width = w2;
-  picto[i].height = w2 * aspect;
+  picto[i].height = w2 * aspect2;
   }
  }
 }
