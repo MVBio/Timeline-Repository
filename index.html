@@ -1,6 +1,6 @@
 <title>Timeline</title>
 
-<body id="body" onload="show(); fixpopups2(); flexible();" onresize="flexible();">
+<body id="body" onload="show(); fixpopups2();" onresize="flexible();">
 
 <script>
 var completed = 207;
@@ -27,7 +27,7 @@ var coffintime = 2000;
   <div id="dark">
     <div id="69">
 
-<div id="progress">
+<div id="progress" onload="flexible();">
 <div id="completed"></div>
 <div id="notcompleted"></div>
 </div>
@@ -2939,13 +2939,6 @@ img {
   display: none;
 }
 
-.picture {
-  max-width: 75% !important;
-  min-width: 75% !important;
-  max-height: 75% !important;
-  min-height: 75% !important;
-}
-
 span:hover+img {
   display: block;
   margin-left: auto;
@@ -3864,9 +3857,8 @@ chungus();
  }
 }
 
-
 var vampire = document.images.length;
-document.getElementById("counting").innerHTML = vampire;
+document.getElementById("counting").innerText = vampire;
 
 function flexible() {
 
