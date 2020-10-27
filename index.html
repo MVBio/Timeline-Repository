@@ -2,7 +2,16 @@
 
 <script>
 
-  let keepScore = 0;
+  let keepScore = -1;
+
+ var texting = Math.floor(Math.random() * window.innerWidth - 50) + 50;
+    var talking = Math.floor(Math.random() * window.innerHeight - 50) + 50;
+
+    keepScore++
+
+
+    document.getElementById("movingSquare").style.left = texting;
+    document.getElementById("movingSquare").style.top = talking;
 
     document.getElementById("boxing").innerText = keepScore;
 
