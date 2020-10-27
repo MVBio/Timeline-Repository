@@ -231,7 +231,7 @@ Total Unique Viewers
 <br><br>
 
     <!-- countdown -->
-    Pictures: 402; Videos: 33; Pics:<tag id="counting" style="display: inline-block;"> ...</tag>
+    Pictures: <tag id="counting" style="display: inline-block;"> ...</tag>; Videos: <tag id="countingVideos" style="display: inline-block;"> ...</tag>
     <p>Currently at: September 2013</p>
     <p>(Enable popups at top of screen if none have already appeared) <img src="https://i.imgur.com/B78IwpV.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/aYdX0Hj.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/eZvEtHH.jpg" style="display: inline-block; height: 24px; width: auto;"></p>
     <a id="2005.tag"> </a>
@@ -390,7 +390,7 @@ WARNING: DO NOT PRESS
 
         <span onmouseover="ontext18()">"<u>Jai Ho</u>"</span>
 
-        <span class="hidden" style="text-align:center;" id="myDIV18">
+        <span class="h idden" style="text-align:center;" id="myDIV18">
           <iframe style="display:none;" onmouseover="scroll123(); flexible();" onvideo18()" onload="offvideo18()" onmouseout="offvideo18()" src="https://open.spotify.com/embed/track/7Kpqjspw4Y7HrvItIRcBiW" width="300" height="380" frameborder="0" allowtransparency="true"
             allow="encrypted-media"></iframe>
         </span>
@@ -403,7 +403,7 @@ WARNING: DO NOT PRESS
 
         <span onmouseover="ontext17()">"<u>Go Hard</u>"</span>
 
-        <span class="hidden" style="text-align:center;" id="myDIV17">
+        <span class="h idden" style="text-align:center;" id="myDIV17">
           <iframe style="display:none;" onmouseover="scroll123(); flexible();" onvideo17()" onload="offvideo17()" onmouseout="offvideo17()" src="https://open.spotify.com/embed/track/21cl5pYLfthmn4yUuECCl5" width="300" height="380" frameborder="0" allowtransparency="true"
             allow="encrypted-media"></iframe>
         </span>
@@ -441,7 +441,7 @@ WARNING: DO NOT PRESS
 
         <span onmouseover="ontext16()">"<u>Ya Birthday</u>."</span>
 
-        <span class="hidden" style="text-align:center;" id="myDIV16">
+        <span class="h idden" style="text-align:center;" id="myDIV16">
           <iframe style="display:none;" onmouseover="scroll123(); flexible();" onvideo16()" onload="offvideo16()" onmouseout="offvideo16()" src="https://open.spotify.com/embed/track/2ad1JRJgYOHev5qrtO1akW" width="300" height="380" frameborder="0" allowtransparency="true"
             allow="encrypted-media"></iframe>
         </span>
@@ -3019,6 +3019,9 @@ Ladybug Corollo conference
 
 var vampire = document.images.length;
 document.getElementById("counting").innerText = vampire;
+
+var classNum = document.getElementsByClassName("hidden")
+document.getElementById("countingVideos").innerText = classNum.length;
 
 </script>
 
