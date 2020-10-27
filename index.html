@@ -2,16 +2,7 @@
 
 <script>
 
-  let keepScore = -1;
-
- var texting = Math.floor(Math.random() * window.innerWidth - 50) + 50;
-    var talking = Math.floor(Math.random() * window.innerHeight - 50) + 50;
-
-    keepScore++
-
-
-    document.getElementById("movingSquare").style.left = texting;
-    document.getElementById("movingSquare").style.top = talking;
+  let keepScore = 0;
 
     document.getElementById("boxing").innerText = keepScore;
 
@@ -34,7 +25,7 @@
 
 <div id="antimatter">Loading...
 <div id="movingSquare" onmouseover="randomMove();" style="height: 50; width: 50; background-color: red; position: absolute;">
-<center><div id="boxing" style="padding: 15 0 0 0"></div></center>
+<center><div id="boxing" style="padding: 15 0 0 0">Click Me</div></center>
 
 </div>
 </div>
