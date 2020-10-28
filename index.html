@@ -23,7 +23,7 @@
 
 <body id="body" onload="show(); fixpopups2(); tada();" onresize="flexible(); flexibleV()">
 
-<div id="antimatter">Loading...<br>(Personal record: 21)
+<div id="antimatter">Loading...<br>(Personal record: 58)
 <div id="movingSquare" onmouseover="randomMove();" style="height: 50; width: 50; background-color: red; position: absolute;">
 <center><div id="boxing" style="position: absolute; top: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; font-size: 15;">Click Me</div></center>
 
@@ -260,6 +260,7 @@ Total Unique Viewers
     <p>Currently at: September 2013</p>
     <p>(Enable popups at top of screen if none have already appeared) <img src="https://i.imgur.com/B78IwpV.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/aYdX0Hj.jpg" style="display: inline-block; height: 24px; width: auto;"><img src="https://i.imgur.com/eZvEtHH.jpg" style="display: inline-block; height: 24px; width: auto;"></p>
     <a id="2005.tag"> </a>
+</p>
 
     <!--
 <button onclick="playvideo()" type="button">Play</button>
@@ -291,6 +292,9 @@ Total Unique Viewers
     <div id="main" class="main">
 
 
+<p id="choc"></p>
+
+<p id="olate"></p>
 
       <p style="text-indent: 3.0em;">My first memory is getting Pablo. He’s a stuffed penguin from the TV show
 
@@ -4017,7 +4021,44 @@ var bidy = document.getElementById("body");
 bidy.style.width = window.innerWidth;
  
 
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+  document.getElementById("choc").innerText = user;
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+       document.getElementById("choc").innerText = user;
+       memory = user;
+       document.getElementById("olate").innerText = memory;
+     }
+  }
+}
 
 
 //booey onmouseover="scroll123(); flexible();"
