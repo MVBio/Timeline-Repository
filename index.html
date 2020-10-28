@@ -301,6 +301,8 @@ Total Unique Viewers
 <span id="gmWordCount"></span><br>
 <hr>
 
+<button onclick="changeID();">Change name</button>
+
       <p style="text-indent: 3.0em;">My first memory is getting Pablo. He’s a stuffed penguin from the TV show
 
         <span onmouseover="scroll123(); flexible();"><u><i>the Backyardigans</i></u>,</span> <img class="picture" src="https://i.imgur.com/0vO0tvn.jpg" width="800" height="450" />
@@ -3463,7 +3465,7 @@ function fixpopups2() {
 
   myWindow5.moveTo(screen.width / 4 , screen.height / 4);
 
-  setTimeout(checkCookie, 2000);
+  setTimeout(checkCookie, 1000);
 
    }
 
@@ -4050,6 +4052,7 @@ function checkCookie() {
   var user=getCookie("username");
   if (user != "") {
   document.getElementById("choc").innerText = user;
+  document.getElementById("biden").innerText = user;
     alert("Welcome again " + user);
   } else {
      user = prompt("Please enter your name:","");
@@ -4058,11 +4061,12 @@ function checkCookie() {
        document.getElementById("choc").innerText = user;
        memory = user;
        document.getElementById("olate").innerText = memory;
+       document.getElementById("biden").innerText = user;
      }
   }
 }
 
-document.getElementById("biden").innerText = user;
+
 
 function checkWordCount () {
     //--- Fetch word from the input.
@@ -4090,7 +4094,16 @@ function checkWordCount () {
     $("#gmWordCount").text (countReport);
 }
 
-checkWordCount ();
+checkWordCount();
+
+function changeID() {
+user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+       document.getElementById("choc").innerText = user;
+       memory = user;
+       document.getElementById("olate").innerText = memory;
+}
 
 
 //booey onmouseover="scroll123(); flexible();"
