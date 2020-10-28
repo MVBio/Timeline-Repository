@@ -3517,14 +3517,6 @@ function fixpopups2() {
     }
   }
 
-  function showOlympics() {
-  document.getElementById("myDIV36").style.display = "block";
-  }
-
-  function hideOlympics() {
-  document.getElementById("myDIV36").style.display = "none";
-  }
-
 
   // a key map of allowed keys
   var allowedKeys = {
@@ -3585,8 +3577,8 @@ function fixpopups2() {
   function activateCheats() {
     playvideo();
     nicegif();
-    document.getElementById(69).style.display = "none";
-    document.getElementById(3).style.display = "block";
+    document.getElementsByClassName(69).style.display = "none";
+    document.getElementsByClassName(3).style.display = "block";
 
   }
 
@@ -3718,8 +3710,8 @@ function fixpopups2() {
     }
 
   function activateCheats2() {
-    document.getElementById(69).style.display = "none";
-    document.getElementById(5).style.display = "block";
+    document.getElementsByClassName(69).style.display = "none";
+    document.getElementsByClassName(5).style.display = "block";
   }
 
   function nicegif2() {
