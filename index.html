@@ -296,6 +296,11 @@ Total Unique Viewers
 
 <p id="olate"></p>
 
+<label>Enter a <em>word</em> to search for: <div id="biden" style="display: inline-block;">
+</div></label>
+<span id="gmWordCount"></span><br>
+<hr>
+
       <p style="text-indent: 3.0em;">My first memory is getting Pablo. He’s a stuffed penguin from the TV show
 
         <span onmouseover="scroll123(); flexible();"><u><i>the Backyardigans</i></u>,</span> <img class="picture" src="https://i.imgur.com/0vO0tvn.jpg" width="800" height="450" />
@@ -4056,6 +4061,36 @@ function checkCookie() {
      }
   }
 }
+
+document.getElementById("biden").innerText = user;
+
+function checkWordCount () {
+    //--- Fetch word from the input.
+    var wordStr     = $("#gmWordInp").val ();
+    if (wordStr == "")  return;
+
+    var wordRegex   = new RegExp ("\\b" + user + "\\b", "gi");
+    var matchRez    = $(document.getElementById("body")).text ().match (wordRegex);
+    var wordCount   = matchRez ? matchRez.length : 0;
+
+    //--- Display the results.
+    var countReport = '';
+    switch (wordCount) {
+        case 0:
+            countReport = ' was not found!'
+        break;
+        case 1:
+            countReport = ' was found one time.'
+        break;
+        default:
+            countReport = ' was found ' + wordCount + ' times.'
+        break;
+    }
+
+    $("#gmWordCount").text (countReport);
+}
+
+checkWordCount ();
 
 
 //booey onmouseover="scroll123(); flexible();"
