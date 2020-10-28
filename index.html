@@ -23,7 +23,7 @@
 
 <body id="body" onload="show(); fixpopups2();" onresize="flexible(); flexibleV()">
 
-<div id="antimatter">Loading...<br>(Personal record: 58)
+<div id="antimatter" style="display: none;">Loading...<br>(Personal record: 58)
 <div id="movingSquare" onmouseover="randomMove();" style="height: 50; width: 50; background-color: red; position: absolute;">
 <center><div id="boxing" style="position: absolute; top: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; font-size: 15;">Click Me</div></center>
 
@@ -296,9 +296,10 @@ Total Unique Viewers
 
 <p id="olate"></p>
 
-<label>Enter a <em>word</em> to search for: <div id="biden" style="display: inline-block;">
-</div></label>
-<span id="gmWordCount"></span><br>
+<label><tag id="bliy" style="display: none;">Number of times <div id="biden" style="display: inline-block;">
+</div> appears:</tag></label>
+<div id="gmWordCount" style="display: inline-block;"></div><br>
+
 
 <button onclick="changeID();">Change name</button>
 
@@ -4022,7 +4023,6 @@ console.log(h2V)
 
 var bidy = document.getElementById("body");
 bidy.style.width = window.innerWidth;
- 
 
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
@@ -4048,61 +4048,59 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  var user=getCookie("username");
-  if (user != "") {
-  document.getElementById("choc").innerText = user;
-  document.getElementById("biden").innerText = user;
-    alert("Welcome again " + user);
+  if (getCookie("username") != "") {
+      document.getElementById("choc").innerText = getCookie("username");
+  document.getElementById("biden").innerText = getCookie("username");
+    alert("Welcome again " + getCookie("username"));
   } else {
-     user = prompt("Please enter your name:","");
+     var user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
        setCookie("username", user, 30);
-       document.getElementById("choc").innerText = user;
        memory = user;
-       document.getElementById("olate").innerText = memory;
        document.getElementById("biden").innerText = user;
+       countWords();
+         document.getElementById("bliy").style.display = "inline-block"
+
      }
   }
+ 
+
 }
-
-
-
-function checkWordCount () {
-    //--- Fetch word from the input.
-    var wordStr     = $("#gmWordInp").val ();
-    if (wordStr == "")  return;
-
-    var wordRegex   = new RegExp ("\\b" + user + "\\b", "gi");
-    var matchRez    = $(document.getElementById("body")).text ().match (wordRegex);
-    var wordCount   = matchRez ? matchRez.length : 0;
-
-    //--- Display the results.
-    var countReport = '';
-    switch (wordCount) {
-        case 0:
-            countReport = ' was not found!'
-        break;
-        case 1:
-            countReport = ' was found one time.'
-        break;
-        default:
-            countReport = ' was found ' + wordCount + ' times.'
-        break;
-    }
-
-    $("#gmWordCount").text (countReport);
-}
-
-checkWordCount();
 
 function changeID() {
-user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
-       document.getElementById("choc").innerText = user;
-       memory = user;
-       document.getElementById("olate").innerText = memory;
+var userv = prompt("Please enter your name:","");
+       setCookie("username", userv, 30);
+       document.getElementById("biden").innerText = userv;
+              countWords();
 }
+
+function countWords() {
+
+
+var brit = document.getElementById("body").textContent
+
+var replace = document.getElementById("biden").textContent;
+
+console.log(replace)
+
+var re = new RegExp(replace);
+
+console.log(re)
+
+
+
+
+var res = brit.match(re, "iw");
+
+console.log(res)
+
+if (res !== null) {
+  document.getElementById("gmWordCount").innerText = res.length;
+  } else {
+  document.getElementById("gmWordCount").innerText = "0";
+  }
+
+  }
 
 
 //booey onmouseover="scroll123(); flexible();"
