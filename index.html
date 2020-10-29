@@ -8,8 +8,8 @@
 
 
   function randomMove() {
-    var texting = Math.floor(Math.random() * window.innerWidth - 50) + 50;
-    var talking = Math.floor(Math.random() * window.innerHeight - 50) + 50;
+    var texting = Math.floor(Math.random() * window.innerWidth - 100) + 100;
+    var talking = Math.floor(Math.random() * window.innerHeight - 100) + 100;
 
     keepScore++
 
@@ -3451,10 +3451,11 @@ function fixpopups2() {
 
  flexible();
 
- checkCookie();
-
  document.getElementById("atoms").style.display = "block";
  document.getElementById("antimatter").style.display = "none";
+
+ checkCookie();
+
 
   var myWindow5 = window.open("https://i.imgur.com/4xLptit.jpg", "", "width=640, height=360");
 
