@@ -285,14 +285,12 @@ Total Unique Viewers
 <input type="button" id="2010button" onclick="scroll2010();" value="2010">
 -->
 
-    <br>
-    <br>
     <a id="2006.tag"> </a>
 
     <div id="main" class="main">
 
 <label><div id="bliy" style="display: none;">Number of times <div id="biden">
-</div> appears: <div id="gmWordCount" style="display: inline-block;"></div> times</div></label>
+</div> appears: <div id="gmWordCount"></div> times</div></label>
 <br>
 
 
@@ -4054,7 +4052,7 @@ function checkCookie() {
        memory = user;
        document.getElementById("biden").innerText = user;
        countWords();
-         document.getElementById("bliy").style.display = "inline-block"
+         document.getElementById("bliy").style.display = "block"
 
      }
   }
