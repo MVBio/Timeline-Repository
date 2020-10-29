@@ -4078,14 +4078,14 @@ var replace = document.getElementById("biden").textContent;
 
 console.log(replace)
 
-var re = new RegExp(replace);
+var re = new RegExp(replace, "g");
 
 console.log(re)
 
 
 
 
-var res = brit.match(re, "iw");
+var res = brit.match(re);
 
 console.log(res)
 
