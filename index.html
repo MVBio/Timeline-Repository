@@ -3451,14 +3451,16 @@ function fixpopups2() {
 
  flexible();
 
+ checkCookie();
+
  document.getElementById("atoms").style.display = "block";
  document.getElementById("antimatter").style.display = "none";
 
-  var myWindow5 = window.open("https://i.imgur.com/4xLptit.jpg", "", "width=640,height=360");
+  var myWindow5 = window.open("https://i.imgur.com/4xLptit.jpg", "", "width=640, height=360");
 
   myWindow5.moveTo(screen.width / 4 , screen.height / 4);
 
-  setTimeout(checkCookie(), 1000);
+
 
    }
 
@@ -4076,7 +4078,7 @@ var replace = document.getElementById("biden").textContent;
 
 console.log(replace)
 
-var re = new RegExp(replace, "g");
+var re = new RegExp(replace, "gi");
 
 console.log(re)
 
