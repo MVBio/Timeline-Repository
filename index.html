@@ -4045,8 +4045,9 @@ function getCookie(cname) {
 
 function checkCookie() {
   if (getCookie("username") != "") {
-  var juice = getCookie("username"); 
-  document.getElementById("biden").innerText = juice;
+    var juice = getCookie("username"); 
+    document.getElementById("biden").innerText = juice;
+    countWords();
     alert("Welcome again " + juice);
   } else {
      var user = prompt("Please enter your name:","");
