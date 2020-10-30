@@ -4131,8 +4131,7 @@ function logScroll() {
 //console.log(window.pageYOffset)
 var giggem = window.pageYOffset;
 setCookie("scrollProgress", giggem, 365);
-var z = getCookie("scrollProgress");
-if (z.length > 0) {
+if (giggem.length > 0) {
 document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + z;
 document.getElementById("bopeep3").innerText = "3 " + document.cookie;} else {
 document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + "0";
@@ -4150,6 +4149,7 @@ function setCookie(name,value,days) {
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
+
 function getCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
