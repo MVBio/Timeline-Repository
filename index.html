@@ -4129,7 +4129,7 @@ document.getElementById("bopeep3").innerText = "3 " + document.cookie;
 
 function logScroll() {
 //console.log(window.pageYOffset)
-var giggem = window.pageYOffset;
+var giggem = document.body.pageYOffset;
 setCookie("scrollProgress", giggem, 365);
 if (giggem.length > 0) {
 document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + z;
@@ -4165,7 +4165,7 @@ function scrollToCookie() {
 var z = getCookie("scrollProgress");
 document.getElementById("bopeep6").innerText = "show me";
 document.getElementById("bopeep7").innerText = "show " + z;
-window.scrollTo(0, z);
+document.body.scrollTo(0, z);
 }
 
 
