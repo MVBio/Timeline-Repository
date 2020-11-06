@@ -1,8 +1,10 @@
 <title>Timeline</title>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <script>
 
-var completed = 210;
+var completed = 211;
 var total = 310;
 
 var n = 0.75; 
@@ -259,7 +261,7 @@ Total Unique Viewers
 <div id="bopeep6"></div>
 <div id="bopeep7"></div>
 <button onclick="scrollToCookie();" style="background-color: pink;">
-Button
+Scroll to last (Resume progress)
 </button>
 <br><br>
 
@@ -4005,41 +4007,58 @@ console.log(h2)
   }
   }
 
-function flexibleV() {
 
-var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
+
+  function flexibleV() {
+
+var checkBoxV = document.getElementById("myCheck");
+if (checkBoxV.checked == true) {
 var nV = 0.6
 } else {
 var nV = 0.75
 }  
 
-var wV = window.innerWidth
-var hV = window.innerHeight
+var wV = window.innerWidth;
+var hV = window.innerHeight;
 
 var w2V = nV * wV;
 var h2V = nV * hV;
 
-console.log(w2V)
-console.log(h2V)
+console.log("w2V: " + w2V)
+console.log("h2V: " + h2V)
 
 
 
 
   var pictoV = document.getElementsByClassName("hidden");
+  console.log("length: " + pictoV.length)
   var iV;
   for (iV = 0; iV < pictoV.length; iV++) {
   console.log("---V")
+  //console.log(pictoV)
   
-  var tempheightV = pictoV[iV].height;
-  var tempwidthV = pictoV[iV].width;
+
+  
+  console.log(pictoV[iV].height)
+  
+  //var tempheightV = pictoV[iV].height;
+ //var tempwidthV = pictoV[iV].width;
+  
+    var tempheightV = $(this).height();
+    var tempwidthV = $(this).width();
+  
+  console.log("bruh?" + pictoV[iV])
+  
+  console.log("height: " + tempheightV)
+  console.log("width: " + tempwidthV)
   
   
   
   if (tempheightV > tempwidthV) {
   
   var aspectV = tempwidthV / tempheightV;
-  console.log(aspectV)
+  console.log("mope")
+  console.log("aspectV: " + aspectV)
 
   pictoV[iV].height = h2V;
   pictoV[iV].width = h2V * aspectV;
@@ -4050,10 +4069,11 @@ console.log(h2V)
   } else {
   
   var aspectV = tempheightV / tempwidthV;
+  console.log("bed")
   console.log(aspectV)
   
-  pictoV[iV].width = w2V;
-  pictoV[iV].height = w2V * aspectV;
+  pictoV[iV].height = h2V;
+  pictoV[iV].width = h2V * aspectV;
   
   console.log("HorizontalV")
   console.log(pictoV[iV].width)
@@ -4064,6 +4084,7 @@ console.log(h2V)
 
   }
   }
+
 
 var bidy = document.getElementById("body");
 bidy.style.width = window.innerWidth;
