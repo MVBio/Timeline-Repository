@@ -3095,6 +3095,8 @@ and us kids did all the maintenance for them. (Cleaning up their box, changing o
 </div>
 
 <script>
+var bidy = document.getElementById("body");
+bidy.style.width = window.innerWidth;
 
 var vampire = document.images.length;
 document.getElementById("counting").innerText = vampire - 3;
@@ -4086,8 +4088,7 @@ console.log("h2V: " + h2V)
   }
 
 
-var bidy = document.getElementById("body");
-bidy.style.width = window.innerWidth;
+
 
 function setCookie2(cname,cvalue,exdays) {
   var d = new Date();
