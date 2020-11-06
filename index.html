@@ -3096,7 +3096,7 @@ and us kids did all the maintenance for them. (Cleaning up their box, changing o
 
 <script>
 var bidy = document.getElementById("body");
-bidy.style.width = 100%;
+//bidy.style.width = 100%;
 
 var vampire = document.images.length;
 document.getElementById("counting").innerText = vampire - 3;
@@ -3114,6 +3114,10 @@ document.getElementById("countingVideos").innerText = classNum.length;
 body {
   font-size: 20px;
   line-height: 1.25;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 p {
