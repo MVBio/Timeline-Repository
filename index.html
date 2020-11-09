@@ -4151,7 +4151,11 @@ function getCookie(name) {
 
 function scrollToCookie() {
 var z = getCookie("scrollProgress");
+if (z = 0) {
+document.body.scrollTo(0, 0);
+ } else {
 document.body.scrollTo(0, z + 880);
+ }
 }
 
 
