@@ -3918,6 +3918,8 @@ chungus();
 
 function flexible() {
 
+var n;
+
 var checkBox = document.getElementById("myCheck");
 if (checkBox.checked == true) {
 var n = 0.6
@@ -3994,12 +3996,15 @@ picto[i].width = h2 * aspect;
 
   }
   }
-
+}
 
 
   function flexibleV() {
 
 var checkBoxV = document.getElementById("myCheck");
+
+var nV;
+
 if (checkBoxV.checked == true) {
 var nV = 0.6
 } else {
@@ -4034,37 +4039,37 @@ var h2V = nV * hV;
   
     var tempheightV = $(pictoV[iV]).height();
     var tempwidthV = $(pictoV[iV]).width();
-  
-  //console.log("bruh?" + pictoV[iV])
-  
-  //console.log("height: " + tempheightV)
-  //console.log("width:" + tempwidthV)
-  
-  
-  
+
   if (tempheightV > tempwidthV) {
   
   var aspectV = tempwidthV / tempheightV;
- // console.log("mope")
- // console.log("aspectV: " + aspectV)
+
+if (h2V * aspectV > hV) {
+
+pictoV[iV].width = w2V;
+pictoV[iV].height = w2V * aspectV;
+
+} else {
 
   pictoV[iV].height = h2V;
   pictoV[iV].width = h2V * aspectV;
+
+}
   
-//  console.log(pictoV[iV].height)
-  
- // console.log("VerticalV")
   } else {
   
   var aspectV = tempheightV / tempwidthV;
-//  console.log("bed")
- // console.log(aspectV)
+
+if (w2V * aspectV > wV) {
+
+pictoV[iV].height = h2V;
+pictoV[iV].width = h2V * aspectV;
+
+} else {
 
   pictoV[iV].width = w2V;
   pictoV[iV].height = w2V * aspectV;
   
- // console.log("HorizontalV")
- // console.log(pictoV[iV].width)
   }
   
 //  console.log("HeightV: " + pictoV[iV].height)
@@ -4074,6 +4079,7 @@ var h2V = nV * hV;
   }
 
 
+}
 
 
 function setCookie2(cname,cvalue,exdays) {
