@@ -631,11 +631,18 @@ WARNING: DO NOT PRESS
 
         <span onmouseover="scroll123(); flexible();"><u>the sky was gray almost every day of the year</u>.</span> <img class="picture" src="https://i.imgur.com/HPbuEb9.jpg" width="800" height="600" />
 
-        In the winter,
+        In the winter, 
 
-        <span onmouseover="scroll123(); flexible();"><u> it would snow a decent amount</u>,</span> <img class="picture" src="https://i.imgur.com/egnNlZx.jpg" width="800" height="600" />
+        <span onmouseover="ontext42();"><u>it would snow a decent amount</u></span>
 
-        but my parents said it was fake snow. I think at the time I thought they meant that it wasn’t actually snow but finely shredded paper or something. We did make an igloo out of it once, right outside of our apartment, as well as a
+        <video class="hidden" style="text-align:center;" id="myDIV42" width="600" height="450" onmouseover="flexible(); onvideo42()" onload="offvideo42()" onmouseout="offvideo42()" src="https://drive.google.com/uc?id=1AWfbefz2QdLJQ5m1ZJ8E8-ikgCH2mH6S" controls></video>
+
+
+        but my parents said it was fake snow. I think at the time I thought they meant that it wasn’t actually snow but finely shredded paper or something. We did make an igloo out of it once in 
+
+        <span onmouseover="scroll123(); flexible();"><u>the area right outside of our apartment</u>,</span> <img class="picture" src="https://i.imgur.com/egnNlZx.jpg" width="800" height="600" />
+
+ as well as a
 
         <span onmouseover="scroll123(); flexible();"><u>big snowman</u></span> <img class="picture" src="https://i.imgur.com/8zkdHkR.jpg" width="800" height="600" />
 
@@ -1142,7 +1149,7 @@ WARNING: DO NOT PRESS
 
         next to our house that was kind of the central playing area. When it rained a bunch,
 
-        <span onmouseover="scroll123(); flexible();"><u>we kids would often go outside and slide around in our bathing suits</u>.</span> <img class="picture" src="https://i.imgur.com/GyaeJ1l.jpg" width="800" height="600" />
+        <span onmouseover="scroll123(); flexible();"><u>we kids would often go outside and slide around in our bathing suits</u>.</span> <img class="picture" src="https://i.imgur.com/GyaeJ1l.jpg" width="600" height="800" />
 
         It actually got a few inches deep before it was able to reach the drains down the main pathway. At the far corner of this square was this old gate/tower thing. We were all small enough to slip through the bars whenever we wanted to go up and
         down. We most often went down in order to go to Yonghui, the supermarket that was visible from our apartment. There was always this weird cat hanging around the bottom. It was stray, and it had one blue eye and one brown eye. It was kind of
@@ -3924,10 +3931,10 @@ var h = window.innerHeight
 var w2 = n * w;
 var h2 = n * h;
 
-document.getElementsByClassName("picture").maxHeight = h2;
-document.getElementsByClassName("picture").maxWidth = w2;
+//document.getElementsByClassName("picture").maxHeight = h2;
+//document.getElementsByClassName("picture").maxWidth = w2;
 
-//console.log(w2)
+//console.log(w2) 
 //console.log(h2)
 
 
@@ -3948,16 +3955,32 @@ document.getElementsByClassName("picture").maxWidth = w2;
   var aspect = tempwidth / tempheight;
   //console.log(aspect)
 
+ if (h2 * aspect > h) {
+
+picto[i].width = w2;
+picto[i].height = w2 * aspect;
+
+} else {
+
   picto[i].height = h2;
   picto[i].width = h2 * aspect;
   
   //console.log(picto[i].height)
   
   //console.log("Vertical")
+}
   } else {
   
   var aspect = tempheight / tempwidth;
   //console.log(aspect)
+
+if (w2 * aspect > w) {
+
+picto[i].height = h2;
+picto[i].width = h2 * aspect;
+
+} else {
+
   
   picto[i].width = w2;
   picto[i].height = w2 * aspect;
