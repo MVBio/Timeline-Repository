@@ -3963,11 +3963,13 @@ var h2 = n * h;
 
   picto[i].height = h2;
   picto[i].width = h2 * aspect;
-  picto[i].style.maxWidth = w2;
-  
-  //console.log(picto[i].height)
-  
-  //console.log("Vertical")
+
+ if (h2 * aspect > w2) { 
+
+  picto[i].width = w2;
+  picto[i].height = w2 * aspect;
+
+}
 
   } else {
   
@@ -3977,10 +3979,11 @@ var h2 = n * h;
   
   picto[i].width = w2;
   picto[i].height = w2 * aspect;
-  picto[i].style.maxHeight = h2;
 
-
-
+if (w2 * aspect > h2) {
+  picto[i].height = h2;
+  picto[i].width = h2 * aspect;
+}
   }
   }
 }
@@ -4010,7 +4013,7 @@ var h2V = nV * hV;
   for (iV = 0; iV < pictoV.length; iV++) {
   
   var tempheightV = $(pictoV[iV]).height();
-    var tempwidthV = $(pictoV[iV]).width();
+  var tempwidthV = $(pictoV[iV]).width();
 
   if (tempheightV > tempwidthV) {
   
@@ -4018,7 +4021,13 @@ var h2V = nV * hV;
 
   pictoV[iV].height = h2V;
   pictoV[iV].width = h2V * aspectV;
-  pictoV[iV].style.maxWidth = w2V;
+
+  if (h2V * aspectV > w2V) {
+
+  pictoV[iV].width = w2V;
+  pictoV[iV].height = w2V * aspectV;
+
+} 
 
   
   } else {
@@ -4027,7 +4036,13 @@ var h2V = nV * hV;
 
   pictoV[iV].width = w2V;
   pictoV[iV].height = w2V * aspectV;
-  pictoV[iV].style.maxHeight = h2V;
+
+  if (w2V * aspectV > h2V) {
+
+  pictoV[iV].height = h2V;
+  pictoV[iV].width = h2V * aspectV;
+
+} 
   
   
 
