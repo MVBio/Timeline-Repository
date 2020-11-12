@@ -31,7 +31,7 @@ var coffintime = 2000;
   }
 </script>
 
-<body id="body" onload="show(); fixpopups2(); logScrollInitial();" onresize="flexible(); flexibleV()" onscroll="logScroll();">
+<body class="body" id="body" onload="show(); fixpopups2(); logScrollInitial();" onresize="flexible(); flexibleV()" onscroll="logScroll();">
 
 <div id="antimatter" style="display: block;">Loading...<br>(Personal record: 58)
 <div id="movingSquare" onmouseover="randomMove();" style="height: 50; width:50; background-color: red; position: absolute;">
@@ -269,6 +269,9 @@ Scroll to last (Resume progress)
 
     <!-- countdown -->
     Pictures: <tag id="counting" style="display: inline-block;"> ...</tag>; Videos: <tag id="countingVideos" style="display: inline-block;"> ...</tag>
+<br>
+<tag id="word-count"></tag>
+
     <p>Currently at: October 2013</p>
     <p>(Enable popups at top of screen if none have already appeared) <img src="https://i.imgur.com/B78IwpV.jpg" style="display: inline-block; height: 24px; width:auto;"><img src="https://i.imgur.com/aYdX0Hj.jpg" style="display: inline-block; height: 24px; width:auto;"><img src="https://i.imgur.com/eZvEtHH.jpg" style="display: inline-block; height: 24px; width:auto;"></p>
     <a id="2005.tag"> </a>
@@ -3497,7 +3500,16 @@ let quack = 0;
 
 let milk = 0; 
 
- let paper = 1;
+let paper = 1;
+
+
+var profile_values = document.getElementsByClassName('body');
+var total_words = 0;
+for (iWC = 0; iWC < profile_values.length; iWC++) {
+  total_words += profile_values[iWC].textContent.trim().split(/\s+/).length;
+}
+document.getElementById('word-count').innerHTML = total_words;
+
 
  var bodywidth = window.innerWidth;
 
