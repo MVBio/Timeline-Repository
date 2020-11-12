@@ -3522,11 +3522,11 @@ var quick = total_words - 6418;
 var total_word_count = numberWithCommas(quick) 
 
 function numberWithCommas(x) {
-    var schmoop =  x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     console.log(schmoop)
 } 
 
-document.getElementById('word-count').innerHTML = schmoop;
+document.getElementById('word-count').innerHTML = total_word_count;
 
 // - 6320 for the ENTIRE page
 
