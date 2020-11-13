@@ -3649,7 +3649,7 @@ let paper = 1;
 
 var nonEnglishText = document.getElementById('main').textContent;
 var regexpBMPWord = /\S+/gu;
-var quick = nonEnglishText.match(regexpBMPWord)
+var quick = nonEnglishText.match(regexpBMPWord).length
 
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -3657,7 +3657,7 @@ function numberWithCommas(x) {
 
 var thecount = numberWithCommas(quick) 
 
-document.getElementById('word-count').innerHTML = thecount.length + 1;
+document.getElementById('word-count').innerHTML = thecount + 1;
 
  var bodywidth = window.innerWidth;
 
