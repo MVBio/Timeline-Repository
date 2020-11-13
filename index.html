@@ -3355,11 +3355,11 @@ As we went on the subway to go home, I felt like we stuck out so much (as we pro
 
 <span onmouseover="scroll123();"><u>Chayli, the Lees, and the Herbergers</u>.</span> <img class="picture" src="https://i.imgur.com/m9ecwjF.jpg"/>
 
-LiHong was there as well. In 
+LiHong was there as well. (In 
 
 <span onmouseover="scroll123();"><u>this picture</u></span> <img class="picture" src="https://i.imgur.com/Lt3YFqr.jpg"/>
 
- of her at bat, you can see me in the background there. I don't remember why. I must have gotten in trouble or something.
+ of her at bat, you can see me in the background there. I don't remember why. I must have gotten in trouble.)
 
 
 
@@ -3649,7 +3649,14 @@ let paper = 1;
 
 var nonEnglishText = document.getElementById('main').textContent;
 var regexpBMPWord = /\S+/gu;
-var thecount = nonEnglishText.match(regexpBMPWord)
+var quick = nonEnglishText.match(regexpBMPWord)
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+var thecount = numberWithCommas(quick) 
+
 document.getElementById('word-count').innerHTML = thecount.length + 1;
 
  var bodywidth = window.innerWidth;
