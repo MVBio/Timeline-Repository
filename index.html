@@ -300,7 +300,7 @@ Scroll to last / Resume progress [Experimental]
 
     <a id="2006.tag"> </a>
 
-    <div id="main" class="main">
+
 
 <label><div id="bliy" style="display: inline-block;">Number of times you (<div id="biden" style="display: inline-block;">
 </div>) appear: <div id="gmWordCount" style="display: inline-block;"></div></div></label>
@@ -308,6 +308,8 @@ Scroll to last / Resume progress [Experimental]
 
 
 <button onclick="changeID();">Change name</button>
+
+    <div id="main" class="main">
 
       <p style="text-indent: 3.0em;">My first memory is getting Pablo. He’s a stuffed penguin from 
 
@@ -3628,25 +3630,10 @@ let milk = 0;
 let paper = 1;
 
 
-var profile_values = document.getElementsByClassName('body');
-var total_words = 0;
-for (iWC = 0; iWC < profile_values.length; iWC++) {
-  total_words += profile_values[iWC].textContent.trim().split(/\s+/).length;
-}
-
-var quick = total_words - 6418;
-
-var total_word_count = numberWithCommas(quick) 
-
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    console.log(schmoop)
-} 
-
-document.getElementById('word-count').innerHTML = total_word_count;
-
-// - 6320 for the ENTIRE page
-
+var nonEnglishText = document.getElementById('main').textContent;
+var regexpBMPWord = /\S+/gu;
+var thecount = nonEnglishText.match(regexpBMPWord)
+document.getElementById('word-count').innerHTML = thecount.length + 1;
 
  var bodywidth = window.innerWidth;
 
