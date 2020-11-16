@@ -1811,7 +1811,7 @@ along with
 
  I guess I had just gotten my drums and all, but I was super in the creative spirit. I spent TONS of time on these, and I loved how easy it was to mix different instruments I didn't even know how to play.
 
-        <div height="800" class="hiddenX" style="text-align:center;" id="myDIV52" onload="offvideo52()" >
+        <div height="800" class="hiddenX" style="text-align:center;" id="myDIV52" onmouseover="onvideo52()" onload="offvideo52()" >
 
 Malachi's 1st song
 <audio src="https://media.vocaroo.com/mp3/1bNwMhWoAPcF" controls></audio><br>
@@ -6125,12 +6125,13 @@ document.body.scrollTo(0, z + 880);
     }
   }
 
-
+var cush = 0;
 
   function ontext52() {
     var x = document.getElementById("myDIV52");
-    if (x.style.display === "block") {
-      x.style.display = "block";
+    if (x.style.display === "block" && cush == 1) {
+      x.style.display = "none";
+      var cush = 0; 
     } else {
       x.style.display = "block";
     }
@@ -6143,6 +6144,7 @@ document.body.scrollTo(0, z + 880);
     } else {
       x.style.display = "none";
     }
+    var cush = 1;
   }
 
   function offvideo52() {
