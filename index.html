@@ -33,16 +33,18 @@ var coffintime = 2000;
   }
 </script>
 
-<body class="body" id="body" onload="flexible(); flexibleV(); show(); fixpopups2(); logScrollInitial();" onresize="flexible(); flexibleV()" onscroll="logScroll();">
+<body class="body" id="body" onload="show(); fixpopups2(); logScrollInitial();" onresize="flexible(); flexibleV();" onscroll="logScroll();">
 
 <div id="antimatter" style="display: block;">Loading...
+
+(Personal record: 58)
 
 <div id="movingSquare" onmouseover="randomMove();" style="height: 50; width:50; background-color: red; position: absolute;">
 <center><div id="boxing" style="position: absolute; top: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; font-size: 15;">Click Me</div></center>
 
 </div>
 
-(Personal record: 58)
+
 
 </div>
 
@@ -3569,7 +3571,6 @@ body {
   width:100%;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 300px;
   overflow-x: hidden;
 }
 
@@ -3983,6 +3984,7 @@ document.getElementById("progress").style.display = "block";
 function fixpopups2() { 
 
  flexible();
+ flexibleV();
 
  document.getElementById("atoms").style.display = "block";
  document.getElementById("antimatter").style.display = "none";
