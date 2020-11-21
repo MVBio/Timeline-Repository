@@ -33,7 +33,7 @@ var coffintime = 1500;
   }
 </script>
 
-<body class="body" id="body" onload="show(); fixpopups2(); logScrollInitial();" onresize="flexible(); flexibleV();" onscroll="logScroll();">
+<body class="body" id="body" onload="show(); fixpopups2();" onresize="flexible(); flexibleV();" onscroll="logScroll();">
 
 <div id="antimatter" style="display: block;"><center><br>Loading...
 
@@ -5144,12 +5144,16 @@ document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC"
 
 function logScrollInitial() {
 //console.log(window.pageYOffset)
+
 var z = getCookie("scrollProgress");
 if (z.length > 0) {
+
 //document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + z;
 //document.getElementById("bopeep3").innerText = "3 " + document.cookie;} else {
 //document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + "0";
+
 setCookie("scrollProgress", "0", 365);
+
 //document.getElementById("bopeep3").innerText = "3 " + document.cookie;
  }
 }
