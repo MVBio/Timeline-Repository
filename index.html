@@ -5095,8 +5095,7 @@ function checkCookie() {
   } else {
      var user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
-       setCookie2("username", user, 30);
-       memory = user;
+       setCookie2("username", user, 36500);
        document.getElementById("biden").innerText = user;
        countWords();
          document.getElementById("bliy").style.display = "block"
