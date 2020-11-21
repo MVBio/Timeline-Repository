@@ -5088,14 +5088,14 @@ function getCookie2(cname) {
 
 function checkCookie() {
   if (getCookie2("username") != "") {
-    var juice = getCookie("username"); 
+    var juice = getCookie2("username"); 
     document.getElementById("biden").innerText = juice;
     countWords();
     alert("Welcome again " + juice);
   } else {
      var user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
-       setCookie("username", user, 30);
+       setCookie2("username", user, 30);
        memory = user;
        document.getElementById("biden").innerText = user;
        countWords();
@@ -5142,21 +5142,6 @@ document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC"
 
 //document.getElementById("bopeep5").innerText = "z: " + z;
 
-function logScrollInitial() {
-//console.log(window.pageYOffset)
-
-var z = getCookie("scrollProgress");
-if (z.length > 0) {
-
-//document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + z;
-//document.getElementById("bopeep3").innerText = "3 " + document.cookie;} else {
-//document.getElementById("bopeep4").innerText = "GOGOGOGOGO " + "0";
-
-setCookie("scrollProgress", "0", 365);
-
-//document.getElementById("bopeep3").innerText = "3 " + document.cookie;
- }
-}
 
 function logScroll() {
 //console.log(window.pageYOffset)
