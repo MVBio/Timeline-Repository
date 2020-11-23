@@ -5153,6 +5153,8 @@ var h2V = nV * hV;
   var pictoV = document.getElementsByClassName("hidden");
 
   var iV;
+
+
   for (iV = 0; iV < pictoV.length; iV++) {
   
   var tempheightV = $(pictoV[iV]).height();
@@ -5165,13 +5167,14 @@ var h2V = nV * hV;
   } else {
   var nV = 0.75
   } 
+
+  var w2V = nV * wV;
+  var h2V = nV * hV;
   
   var aspectV = tempwidthV / tempheightV;
 
   pictoV[iV].height = h2V;
   pictoV[iV].width = h2V * aspectV;
-
- 
 
   
   } else {
