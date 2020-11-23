@@ -4442,7 +4442,7 @@ $(".hidden").css("display", "none")
 function reveal(ele) {
 
 var temp = $(ele).next(".hidden").attr("id")
-console.log(temp)
+//console.log(temp)
 $(ele).next(".hidden").css("display", "block")
 }
 
@@ -4452,7 +4452,7 @@ var temp = ele2.id
 if (document.getElementById(temp).style.display === "none") {
 
 $("#" + temp).css("display", "block")
-console.log("show")
+//console.log("show")
 
 } else {
 
@@ -4570,23 +4570,23 @@ document.getElementById("notcompleted").innerText.fontSize = "15px";
     
     var full2003 = calc2004 - calc2003;
     document.getElementById('2003').style.height = full2003 + "px";
-    console.log(full2004)
+    //console.log(full2004)
     
     var full2004 = calc2005 - calc2004;
     document.getElementById('2004').style.height = full2004 + "px";
-    console.log(full2004)
+    //console.log(full2004)
 
     var full2005 = calc2006 - full2005;
     document.getElementById('2005').style.height = full2005 + "px";
-    console.log(calc2005, rect2005.top, bodyrect2005.y)
+    //console.log(calc2005, rect2005.top, bodyrect2005.y)
 
     var full2006 = calc2007 - calc2006;
     document.getElementById('2006').style.height = full2006 + "px";
-    console.log(full2006)
+    //console.log(full2006)
 
     var full2007 = calc2008 - calc2007;
     document.getElementById('2007').style.height = full2007 + "px";
-    console.log(full2007)
+    //console.log(full2007)
 
     var full2008 = calc2009 - calc2008;
     document.getElementById('2008').style.height = full2008 + "px";
@@ -5033,9 +5033,9 @@ function increaseTime() {
     //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
 
     var rngHeight = getRndInteger(0, screen.height - 360)
-    console.log("height", rngHeight)
+    //console.log("height", rngHeight)
         var rngWidth = getRndInteger(0, screen.width - 640)
-    console.log("width", rngWidth)
+    //console.log("width", rngWidth)
 
 
     function getRndInteger(min, max) {
@@ -5066,10 +5066,10 @@ function timeincreaseTime() {
     //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
 
     var timerngHeight = timegetRndInteger(0, screen.height - 360);
-    console.log("height", timerngHeight);
+    //console.log("height", timerngHeight);
 
         var timerngWidth = timegetRndInteger(0, screen.width - 640);
-    console.log("width", timerngWidth);
+    //console.log("width", timerngWidth);
 
 
     function timegetRndInteger(min, max) {
@@ -5085,7 +5085,7 @@ function timeincreaseTime() {
   }
 
   timeincreaseTime();
-  console.log("time")
+  //console.log("time")
   }
   
 
@@ -5115,8 +5115,8 @@ var h2 = n * h;
 //document.getElementsByClassName("picture").maxHeight = h2;
 //document.getElementsByClassName("picture").maxWidth = w2;
 
-//console.log(w2) 
-//console.log(h2)
+////console.log(w2) 
+////console.log(h2)
 
 
 
@@ -5124,7 +5124,7 @@ var h2 = n * h;
   var picto = document.getElementsByClassName("picture");
   var i;
   for (i = 0; i < picto.length; i++) {
-  //console.log("---")
+  ////console.log("---")
   
   var tempheight = picto[i].height;
   var tempwidth = picto[i].width;
@@ -5134,7 +5134,7 @@ var h2 = n * h;
   if (tempheight > tempwidth) {
   
   var aspect = tempwidth / tempheight;
-  //console.log(aspect)
+  ////console.log(aspect)
 
   picto[i].height = h2;
   picto[i].width = h2 * aspect;
@@ -5143,7 +5143,7 @@ var h2 = n * h;
   } else {
   
   var aspect = tempheight / tempwidth;
-  //console.log(aspect)
+  ////console.log(aspect)
 
   picto[i].height = h2;
   picto[i].width = h2 / aspect;
@@ -5285,7 +5285,7 @@ var re = new RegExp(replace, "gi");
 
 var res = brit.match(re);
 
-console.log(res)
+//console.log(res)
 
 if (res !== null) {
   document.getElementById("gmWordCount").innerText = res.length - 1;
@@ -5295,7 +5295,7 @@ if (res !== null) {
 
   }
 
-//console.log(window.innerHeight)
+////console.log(window.innerHeight)
 document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC"
 //document.getElementById("bopeep3").innerText = "3 " + document.cookie;
 
@@ -5303,7 +5303,7 @@ document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC"
 
 
 function logScroll() {
-//console.log(window.pageYOffset)
+////console.log(window.pageYOffset)
 var giggem = document.body.pageYOffset;
 setCookie("scrollProgress", giggem, 36500);
 }
