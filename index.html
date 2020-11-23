@@ -5159,6 +5159,12 @@ var h2V = nV * hV;
   var tempwidthV = $(pictoV[iV]).width();
 
   if (tempheightV > tempwidthV) {
+
+  if (checkBoxV.checked == true) {
+  var nV = 0.6
+  } else {
+  var nV = 0.75
+  } 
   
   var aspectV = tempwidthV / tempheightV;
 
