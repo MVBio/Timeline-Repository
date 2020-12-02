@@ -5911,19 +5911,10 @@ var h = window.innerHeight
 var w2 = n * w;
 var h2 = n * h;
 
-//document.getElementsByClassName("picture").maxHeight = h2;
-//document.getElementsByClassName("picture").maxWidth = w2;
-
-////console.log(w2) 
-////console.log(h2)
-
-
-
 
   var picto = document.getElementsByClassName("picture");
   var i;
   for (i = 0; i < picto.length; i++) {
-  ////console.log("---")
   
   var tempheight = picto[i].height;
   var tempwidth = picto[i].width;
@@ -5933,7 +5924,15 @@ var h2 = n * h;
   if (tempheight > tempwidth) {
   
   var aspect = tempwidth / tempheight;
-  ////console.log(aspect)
+
+if (checkBox.checked == true) {
+var n = 0.5
+} else {
+var n = 0.65
+}  
+
+var w2 = n * w;
+var h2 = n * h;
 
   picto[i].height = h2;
   picto[i].width = h2 * aspect;
