@@ -5914,8 +5914,9 @@ var h2 = n * h;
   var aspect = tempheight / tempwidth;
   ////console.log(aspect)
 
+
   picto[i].height = h2;
-  picto[i].width = h2 / aspect;
+  picto[i].width = h2 * aspect;
   
   //picto[i].width = w2;
   //picto[i].height = w2 * aspect;
@@ -5924,6 +5925,8 @@ var h2 = n * h;
   //picto[i].height = h2;
   //picto[i].width = h2 * aspect;
 //}
+
+    }
   }
   }
 }
