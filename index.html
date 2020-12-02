@@ -5915,8 +5915,14 @@ var h2 = n * h;
 
   if (w2 * aspect > h) {
 
+var n = 0.5;
+
+var w2 = n * w;
+var h2 = n * h;
+
   picto[i].height = h2;
   picto[i].width = h2 / aspect;
+
 } else {
   
   picto[i].width = w2;
