@@ -5912,22 +5912,10 @@ var h2 = n * h;
   } else {
   
   var aspect = tempheight / tempwidth;
-
-  if (w2 * aspect > h) {
-
-var n = 0.5;
-
-var w2 = n * w;
-var h2 = n * h;
-
-  picto[i].height = h2;
-  picto[i].width = h2 / aspect;
-
-} else {
   
   picto[i].width = w2;
   picto[i].height = w2 * aspect;
-}
+
 
 //if (w2 * aspect > h2) {
   //picto[i].height = h2;
@@ -5969,12 +5957,6 @@ var h2V = nV * hV;
   var tempwidthV = $(pictoV[iV]).width();
 
   if (tempheightV > tempwidthV) {
-
-  if (checkBoxV.checked == true) {
-  var nV = 0.6
-  } else {
-  var nV = 0.75
-  } 
 
   var w2V = nV * wV;
   var h2V = nV * hV;
