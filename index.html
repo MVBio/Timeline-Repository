@@ -4944,7 +4944,7 @@ So yeah. The pieces from that board game expanded our Lego inventory a lot.
 
  So songs like 
 
-        <u class="selector" onmouseover="reveal(this);">Beat it, Bad, Thriller, Man in the Mirror, and Billie Jean</u>
+        <u class="selector" onmouseover="revealX(this);">Beat it, Bad, Thriller, Man in the Mirror, and Billie Jean</u>
 
 <iframe id="michaeljackson" class="hiddenX" style="text-align:center;" src="https://open.spotify.com/embed/playlist/1eB5zleMswNlfMcZ2uqmcZ" width="300" height="380" onmouseover="scroll123();" onmouseleave="revealon(this);" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -5281,6 +5281,31 @@ $("#" + temp).css("display", "block")
 $("#" + temp).css("display", "none")
 
 }}
+
+
+
+function revealX(ele) {
+
+var temp = $(ele).next(".hiddenX").attr("id")
+//console.log(temp)
+$(ele).next(".hiddenX").css("display", "block")
+}
+
+function revealon(ele2) {
+var temp = ele2.id
+
+if (document.getElementById(temp).style.display === "none") {
+
+$("#" + temp).css("display", "block")
+//console.log("show")
+
+} else {
+
+$("#" + temp).css("display", "none")
+
+}}
+
+
 
 var nonEnglishText = document.getElementById('main').textContent;
 var regexpBMPWord = /\S+/gu;
