@@ -504,7 +504,15 @@ as "Hong Kong",)
         <span onmouseover="scroll123();" onmouseout="scroll123();"><u>in this group of volunteers</u>,</span> <img class="picture" src="https://i.imgur.com/A0wpsEZ.jpg" width="704" height="468" />
 
         the earliest such group that I remember. I still recognize a lot of their faces. I remember that during our time with them we dubbed ourselves "the water team." One of the locations I link with this time period was a coffee shop we went
-        to often. It had tons of books and was very brown. There was a song that always played over the speakers, "Ya Birthday". I only recently heard it again.
+        to often. It had tons of books and was very brown. There was a song that always played over the speakers, 
+
+
+
+        "<u class="selector" onmouseover="revealX(this);">Ya Birthday</u>".
+
+<iframe id="yabirthday" class="hiddenX" style="text-align:center;" src="https://open.spotify.com/embed/track/2ad1JRJgYOHev5qrtO1akW" width="300" height="380" onmouseover="scroll123();" onmouseleave="revealon(this);" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+ (I only recently heard it again.
 
 <!--
 
@@ -518,7 +526,7 @@ as "Hong Kong",)
 
 -->
 
-        (All I knew to type into Google was the only line I remembered: "it's mine, it's yours, it's everybody's birthday." We called that the birthday song for a while. Two things that are always linked to that time period were these pens that had these
+        All I knew to type into Google was the only line I remembered: "it's mine, it's yours, it's everybody's birthday." We called that the birthday song for a while. Two things that are always linked to that time period were these pens that had these
         Bible tracts that rolled out of the sides, as well as this coffeecake my mom always made. I remember jabbering on about water on the way to the train station, and how that was one of the first times I was sad about someone leaving. One night around this time, I woke up covered from head to toe in mosquito bites. I went to my parents’ room and knocked on their door, and
         when they saw me they at first thought I had chicken pox! The next day they tried to hunt down the mosquitoes, but they couldn’t find very many. Eventually, DaYu found and killed one mosquito that was triple the size of a normal mosquito.
         After that, I didn’t have any major issues with mosquito bites. I remember one time where apparently some people came and handed us some pamphlets. My parents explained to us that they were from a cult, but at the time I thought they had said
@@ -4948,7 +4956,11 @@ So yeah. The pieces from that board game expanded our Lego inventory a lot.
 
 <iframe id="michaeljackson" class="hiddenX" style="text-align:center;" src="https://open.spotify.com/embed/playlist/1eB5zleMswNlfMcZ2uqmcZ" width="300" height="380" onmouseover="scroll123();" onmouseleave="revealon(this);" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
- were playing non-stop throughout the house. (I remember there was some controversy about Kesed and the Thriller music video. I think he convinced LiHong to let him watch it, and my parents hadn't wanted him to, since it might have been too scary for him. Kesed claimed it wasn't that bad, though.) During our years in Fuzhou, none of us kids really had music of our own. We had the Just Dance videos on YouTube we would dance to, but we didn't really have/use Spotify or another such music platform. Selah might have, since she got her first phone at one point during those 4 years, but the rest of us had Pandora radio or Apple music radio at best. I remember two of my favorite songs to listen to were the Phineas and Ferb theme song and Touch the Sky from Brave.
+ were playing non-stop throughout the house. (I remember there was some controversy about Kesed and the Thriller music video. I think he convinced LiHong to let him watch it, and my parents hadn't wanted him to, since it might have been too scary for him. Kesed claimed it wasn't that bad, though.) During our years in Fuzhou, none of us kids really had music of our own. We had the Just Dance videos on YouTube we would dance to, but we didn't really have/use Spotify or another such music platform. Selah might have, since she got her first phone at one point during those 4 years, but the rest of us had Pandora radio or Apple music radio at best. I remember two of my favorite songs to listen to were 
+
+        <u class="selector" onmouseover="revealX(this);">the Phineas and Ferb theme song and Touch the Sky from Brave</u>.
+
+<iframe id="radiosongs" class="hiddenX" style="text-align:center;" src="https://open.spotify.com/embed/playlist/76lDScs0RMErkC08GmRaDO" width="300" height="380" onmouseover="scroll123();" onmouseleave="revealon(this);" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 
 
@@ -5290,22 +5302,6 @@ var temp = $(ele).next(".hiddenX").attr("id")
 //console.log(temp)
 $(ele).next(".hiddenX").css("display", "block")
 }
-
-function revealon(ele2) {
-var temp = ele2.id
-
-if (document.getElementById(temp).style.display === "none") {
-
-$("#" + temp).css("display", "block")
-//console.log("show")
-
-} else {
-
-$("#" + temp).css("display", "none")
-
-}}
-
-
 
 var nonEnglishText = document.getElementById('main').textContent;
 var regexpBMPWord = /\S+/gu;
