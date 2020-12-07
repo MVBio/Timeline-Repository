@@ -6560,9 +6560,9 @@ function fullmode() {
 
 var togglefullmode2 = togglefullmode * togglefull
 
-if (document.getElementsByClassName("picture").style.display = "block" &&
-document.getElementsByClassName("hidden").style.display = "block" &&
-document.getElementsByClassName("hiddenX").style.display = "block") {
+if (document.getElementsByClassName("picture").style.display == "block" &&
+document.getElementsByClassName("hidden").style.display == "block" &&
+document.getElementsByClassName("hiddenX").style.display == "block") {
 
 document.getElementsByClassName("picture").style.display = "none"
 document.getElementsByClassName("hidden").style.display = "none"
@@ -6577,7 +6577,7 @@ document.getElementsByClassName("hiddenX").style.display = "block"
 
 function printmode() {
 
-if (document.getElementsByClassName("picture").style.display = "block") {
+if (document.getElementsByClassName("picture").style.display == "block") {
 document.getElementsByClassName("picture").style.display = "none"
 } else {
 document.getElementsByClassName("picture").style.display = "block"
