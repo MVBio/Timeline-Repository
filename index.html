@@ -6289,8 +6289,6 @@ chungus();
  }
 }
 
-function flexible() {
-
 var n;
 
 var checkBox = document.getElementById("myCheck");
@@ -6298,7 +6296,9 @@ if (checkBox.checked == true) {
 var n = 0.4
 } else {
 var n = 0.55
-}  
+}
+
+function flexible() {
 
 var w = window.innerWidth
 var h = window.innerHeight
@@ -6614,7 +6614,13 @@ for (var i = 0; i < img.length; i++) {
 } else {
 
 var img = document.getElementsByClassName('picture');
+
+var n = 0.35;
+
+flexible();
+
 for (var i = 0; i < img.length; i++) {
+
   img[i].style.display = 'block'
   img[i].style.marginLeft = 'auto'
   img[i].style.marginRight = 'auto'
