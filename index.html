@@ -227,6 +227,8 @@ var coffintime = 1500;
 
 
       <center><button onclick="darkmode()">Toggle dark mode</button></center>
+      <center><button onclick="fullmode()">Toggle full</button></center>
+      <center><button onclick="printmode()">Toggle dark mode</button></center>
   <center><iframe height="500" width="100%" id="chat" src="https://deadsimplechat.com/yrVil_mm9" style="display: none; width:450; height: 1000px;">
 </iframe></center>
 <!-- private: https://deadsimplechat.com/yrVil_mm9 -->
@@ -6550,5 +6552,37 @@ document.body.scrollTo(0, 0);
 document.body.scrollTo(0, z + 880);
  }
 }
+
+var togglefullmode = -1;
+var togglefullmodeswitcher = -1;
+
+function fullmode() {
+
+var togglefullmode2 = togglefullmode * togglefull
+
+if (document.getElementsByClassName("picture").style.display = "block" &&
+document.getElementsByClassName("hidden").style.display = "block" &&
+document.getElementsByClassName("hiddenX").style.display = "block") {
+
+document.getElementsByClassName("picture").style.display = "none"
+document.getElementsByClassName("hidden").style.display = "none"
+document.getElementsByClassName("hiddenX").style.display = "none"
+} else {
+
+document.getElementsByClassName("picture").style.display = "block"
+document.getElementsByClassName("hidden").style.display = "block"
+document.getElementsByClassName("hiddenX").style.display = "block"
+}
+
+function printmode() {
+
+if (document.getElementsByClassName("picture").style.display = "block") {
+document.getElementsByClassName("picture").style.display = "none"
+} else {
+document.getElementsByClassName("picture").style.display = "block"
+
+}
+
+
 
 </script>
