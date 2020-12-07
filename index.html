@@ -229,6 +229,7 @@ var coffintime = 1500;
       <center><button onclick="darkmode()">Toggle dark mode</button></center>
       <center><button onclick="fullmode()">Toggle full</button></center>
       <center><button onclick="printmode()">Toggle printable mode</button></center>
+      <center><button onclick="videomode()">Toggle video visibility</button></center>
   <center><iframe height="500" width="100%" id="chat" src="https://deadsimplechat.com/yrVil_mm9" style="display: none; width:450; height: 1000px;">
 </iframe></center>
 <!-- private: https://deadsimplechat.com/yrVil_mm9 -->
@@ -6550,8 +6551,11 @@ document.body.scrollTo(0, 0);
 document.body.scrollTo(0, z + 880);
  }
 }
+
+
 var abcd = 0;
 var efgh = 0;
+var ijkl = 0;
 
 
 
@@ -6628,6 +6632,35 @@ for (var i = 0; i < img.length; i++) {
 }
 }
 
+function videomode() {
+
+ijkl++
+
+if(ijkl % 2 == 0) {
+
+var img2 = document.getElementsByClassName('hidden');
+for (var i = 0; i < img2.length; i++) {
+  img2[i].style.display = 'none';
+}
+
+var img3 = document.getElementsByClassName('hiddenX');
+for (var i = 0; i < img3.length; i++) {
+  img3[i].style.display = 'none';
+
+} 
+
+} else {
+
+var img2 = document.getElementsByClassName('hidden');
+for (var i = 0; i < img2.length; i++) {
+  img2[i].style.display = 'block';
+}
+
+var img3 = document.getElementsByClassName('hiddenX');
+for (var i = 0; i < img3.length; i++) {
+  img3[i].style.display = 'block';
+}
+}
 
 
 </script>
