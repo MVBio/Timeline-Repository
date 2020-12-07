@@ -5949,6 +5949,7 @@ function fixpopups2() {
         document.documentElement.scrollTop = 0;
 
         document.getElementById("progress").style.display = "none";
+	document.getElementById("body").style.display = "none"
 
         activateCheats();
         zero();
@@ -5968,6 +5969,7 @@ function fixpopups2() {
       if (konamiCodePosition < 2) {
         nomorenicegif();
         nomorenicevideo();
+	document.getElementById("body").style.display = "block"
         document.getElementById(69).style.display = "block";
         document.getElementById(3).style.display = "none";
       }
@@ -6029,10 +6031,11 @@ function fixpopups2() {
 
       // if the last key is reached, activate cheats
       if (konamiCodePosition2 == konamiCode2.length) {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0;
+        //document.body.scrollTop = 0; // For Safari
+        //document.documentElement.scrollTop = 0;
 
         document.getElementById("progress").style.display = "none";
+	document.getElementById("body").style.display = "none";
 
         nicegif2();
         playvideo2();
@@ -6053,6 +6056,7 @@ function fixpopups2() {
       if (konamiCodePosition2 < 3) //konamiCodePosition2 is 0 or 1
       {
         nomorenicevideo2();
+	document.getElementById("body").style.display = "block"
 
         document.getElementById(5).style.display = "none";
 
