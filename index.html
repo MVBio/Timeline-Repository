@@ -5770,1052 +5770,1051 @@ button:focus {outline:0;}
 
 <script>
 
-let rock = 1;
-let bed = 1;
-let quack = 0;
+  let rock = 1;
+  let bed = 1;
+  let quack = 0;
 
-let milk = 0;
+  let milk = 0;
 
-let paper = 1;
+  let paper = 1;
 
 
 
-$(".hidden").css("display", "none")
+  $(".hidden").css("display", "none")
 
-function reveal(ele) {
+  function reveal(ele) {
 
-var temp = $(ele).next(".hidden").attr("id")
-//console.log(temp)
-$(ele).next(".hidden").css("display", "block")
-}
-
-function revealon(ele2) {
-var temp = ele2.id
-
-if (document.getElementById(temp).style.display === "none") {
-
-$("#" + temp).css("display", "block")
-//console.log("show")
-
-} else {
-
-$("#" + temp).css("display", "none")
-
-}}
-
-
-
-function revealX(ele) {
-
-
-var temp = $(ele).next(".hiddenX").attr("id")
-//console.log(temp)
-$(ele).next(".hiddenX").css("display", "block")
-}
-
-var nonEnglishText = document.getElementById('main').textContent;
-var regexpBMPWord = /\S+/gu;
-var quick = nonEnglishText.match(regexpBMPWord).length
-
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-var thecount = numberWithCommas(quick)
-
-document.getElementById('word-count').innerHTML = thecount;
-
- var bodywidth = window.innerWidth;
-
-    var percentage = completed / total ;
-    var antipercentage = 1 - percentage;
-
-    var perc = Math.round(percentage * 1000);
-    var percent = perc / 10;
-
-    var antiperc = Math.round(antipercentage * 1000);
-    var antipercent = antiperc / 10;
-
-    document.getElementById('completed').style.width = percentage * 100 + '%';
-    document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
-
-    document.getElementById("completed").innerText = " " + percent + '%' + ' done with Fuzhou, on the way to Qingdao';
-    document.getElementById("completed").innerText.fontSize = "15px";    document.getElementById("notcompleted").innerText = antipercent + '%' + " ";
-document.getElementById("notcompleted").innerText.fontSize = "15px";
-
-  function scroll123() {
-
-    var bodyrect2003 = document.body.getBoundingClientRect();
-    var rect2003 = document.getElementById('2003.tag').getBoundingClientRect();
-    var calc2003 = rect2003.top - bodyrect2003.y;
-
-    var bodyrect2004 = document.body.getBoundingClientRect();
-    var rect2004 = document.getElementById('2004.tag').getBoundingClientRect();
-    var calc2004 = rect2004.top - bodyrect2004.y;
-
-    var bodyrect2005 = document.body.getBoundingClientRect();
-    var rect2005 = document.getElementById('2005.tag').getBoundingClientRect();
-    var calc2005 = rect2005.top - bodyrect2005.y;
-
-    var bodyrect2006 = document.body.getBoundingClientRect();
-    var rect2006 = document.getElementById('2006.tag').getBoundingClientRect();
-    var calc2006 = rect2006.top - bodyrect2006.y;
-
-    var bodyrect2007 = document.body.getBoundingClientRect();
-    var rect2007 = document.getElementById('2007.tag').getBoundingClientRect();
-    var calc2007 = rect2007.top - bodyrect2007.y;
-
-    var bodyrect2008 = document.body.getBoundingClientRect();
-    var rect2008 = document.getElementById('2008.tag').getBoundingClientRect();
-    var calc2008 = rect2008.top - bodyrect2008.y;
-
-    var bodyrect2009 = document.body.getBoundingClientRect();
-    var rect2009 = document.getElementById('2009.tag').getBoundingClientRect();
-    var calc2009 = rect2009.top - bodyrect2009.y;
-
-    var bodyrect2010 = document.body.getBoundingClientRect();
-    var rect2010 = document.getElementById('2010.tag').getBoundingClientRect();
-    var calc2010 = rect2010.top - bodyrect2010.y;
-
-    var bodyrect2011 = document.body.getBoundingClientRect();
-    var rect2011 = document.getElementById('2011.tag').getBoundingClientRect();
-    var calc2011 = rect2011.top - bodyrect2011.y;
-
-    var bodyrect2012 = document.body.getBoundingClientRect();
-    var rect2012 = document.getElementById('2012.tag').getBoundingClientRect();
-    var calc2012 = rect2012.top - bodyrect2012.y;
-
-    var bodyrect2013 = document.body.getBoundingClientRect();
-    var rect2013 = document.getElementById('2013.tag').getBoundingClientRect();
-    var calc2013 = rect2013.top - bodyrect2013.y;
-
-    var bodyrect2014 = document.body.getBoundingClientRect();
-    var rect2014 = document.getElementById('2014.tag').getBoundingClientRect();
-    var calc2014 = rect2014.top - bodyrect2014.y;
-
-    var bodyrect2015 = document.body.getBoundingClientRect();
-    var rect2015 = document.getElementById('2015.tag').getBoundingClientRect();
-    var calc2015 = rect2015.top - bodyrect2015.y;
-
-    var bodyrect2016 = document.body.getBoundingClientRect();
-    var rect2016 = document.getElementById('2016.tag').getBoundingClientRect();
-    var calc2016 = rect2016.top - bodyrect2016.y;
-
-    var bodyrect2017 = document.body.getBoundingClientRect();
-    var rect2017 = document.getElementById('2017.tag').getBoundingClientRect();
-    var calc2017 = rect2017.top - bodyrect2017.y;
-
-    var bodyrect2018 = document.body.getBoundingClientRect();
-    var rect2018 = document.getElementById('2018.tag').getBoundingClientRect();
-    var calc2018 = rect2018.top - bodyrect2018.y;
-
-    var bodyrect2019 = document.body.getBoundingClientRect();
-    var rect2019 = document.getElementById('2019.tag').getBoundingClientRect();
-    var calc2019 = rect2019.top - bodyrect2019.y;
-
-    var bodyrect2020 = document.body.getBoundingClientRect();
-    var rect2020 = document.getElementById('2020.tag').getBoundingClientRect();
-    var calc2020 = rect2020.top - bodyrect2020.y;
-
-    var bodyrect2021 = document.body.getBoundingClientRect();
-    var rect2021 = document.getElementById('2021.tag').getBoundingClientRect();
-    var calc2021 = rect2021.top - bodyrect2021.y;
-
-    var full2003 = calc2004 - calc2003;
-    document.getElementById('2003').style.height = full2003 + "px";
-    //console.log(full2004)
-
-    var full2004 = calc2005 - calc2004;
-    document.getElementById('2004').style.height = full2004 + "px";
-    //console.log(full2004)
-
-    var full2005 = calc2006 - full2005;
-    document.getElementById('2005').style.height = full2005 + "px";
-    //console.log(calc2005, rect2005.top, bodyrect2005.y)
-
-    var full2006 = calc2007 - calc2006;
-    document.getElementById('2006').style.height = full2006 + "px";
-    //console.log(full2006)
-
-    var full2007 = calc2008 - calc2007;
-    document.getElementById('2007').style.height = full2007 + "px";
-    //console.log(full2007)
-
-    var full2008 = calc2009 - calc2008;
-    document.getElementById('2008').style.height = full2008 + "px";
-
-    var full2009 = calc2010 - calc2009;
-    document.getElementById('2009').style.height = full2009 + "px";
-
-    var full2010 = calc2011 - calc2010;
-    document.getElementById('2010').style.height = full2010 + "px";
-
-    var full2011 = calc2012 - calc2011;
-    document.getElementById('2011').style.height = full2011 + "px";
-
-    var full2012 = calc2013 - calc2012;
-    document.getElementById('2012').style.height = full2012 + "px";
-
-    var full2013 = calc2014 - calc2013;
-    document.getElementById('2013').style.height = full2013 + "px";
-
-    var full2014 = calc2015 - calc2014;
-    document.getElementById('2014').style.height = full2014 + "px";
-
-    var full2015 = calc2016 - calc2015;
-    document.getElementById('2015').style.height = full2015 + "px";
-
-    var full2016 = calc2017 - calc2016;
-    document.getElementById('2016').style.height = full2016 + "px";
-
-    var full2017 = calc2018 - calc2017;
-    document.getElementById('2017').style.height = full2017 + "px";
-
-    var full2018 = calc2019 - calc2018;
-    document.getElementById('2018').style.height = full2018 + "px";
-
-    var full2019 = calc2020 - calc2019;
-    document.getElementById('2019').style.height = full2019 + "px";
-
-    var full2020 = calc2021 - calc2020;
-    document.getElementById('2020').style.height = full2020 + "px";
-
+  var temp = $(ele).next(".hidden").attr("id")
+  //console.log(temp)
+  $(ele).next(".hidden").css("display", "block")
   }
 
+  function revealon(ele2) {
+  var temp = ele2.id
 
-  function sidebarfunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("myCheck");
-    // Get the output text
-    var text = document.getElementById("bar");
+  if (document.getElementById(temp).style.display === "none") {
 
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true) {
-      text.style.display = "block";
-      text.style.float = "right";
-      text.style.width = "15%";
-      text.style.height = "0px";
-    } else {
-      text.style.display = "none";
+  $("#" + temp).css("display", "block")
+  //console.log("show")
+
+  } else {
+
+  $("#" + temp).css("display", "none")
+
+  }}
+
+
+
+  function revealX(ele) {
+
+
+  var temp = $(ele).next(".hiddenX").attr("id")
+  //console.log(temp)
+  $(ele).next(".hiddenX").css("display", "block")
+  }
+
+  var nonEnglishText = document.getElementById('main').textContent;
+  var regexpBMPWord = /\S+/gu;
+  var quick = nonEnglishText.match(regexpBMPWord).length
+
+  function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  var thecount = numberWithCommas(quick)
+
+  document.getElementById('word-count').innerHTML = thecount;
+
+   var bodywidth = window.innerWidth;
+
+      var percentage = completed / total ;
+      var antipercentage = 1 - percentage;
+
+      var perc = Math.round(percentage * 1000);
+      var percent = perc / 10;
+
+      var antiperc = Math.round(antipercentage * 1000);
+      var antipercent = antiperc / 10;
+
+      document.getElementById('completed').style.width = percentage * 100 + '%';
+      document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
+
+      document.getElementById("completed").innerText = " " + percent + '%' + ' done with Fuzhou, on the way to Qingdao';
+      document.getElementById("completed").innerText.fontSize = "15px";    document.getElementById("notcompleted").innerText = antipercent + '%' + " ";
+  document.getElementById("notcompleted").innerText.fontSize = "15px";
+
+    function scroll123() {
+
+      var bodyrect2003 = document.body.getBoundingClientRect();
+      var rect2003 = document.getElementById('2003.tag').getBoundingClientRect();
+      var calc2003 = rect2003.top - bodyrect2003.y;
+
+      var bodyrect2004 = document.body.getBoundingClientRect();
+      var rect2004 = document.getElementById('2004.tag').getBoundingClientRect();
+      var calc2004 = rect2004.top - bodyrect2004.y;
+
+      var bodyrect2005 = document.body.getBoundingClientRect();
+      var rect2005 = document.getElementById('2005.tag').getBoundingClientRect();
+      var calc2005 = rect2005.top - bodyrect2005.y;
+
+      var bodyrect2006 = document.body.getBoundingClientRect();
+      var rect2006 = document.getElementById('2006.tag').getBoundingClientRect();
+      var calc2006 = rect2006.top - bodyrect2006.y;
+
+      var bodyrect2007 = document.body.getBoundingClientRect();
+      var rect2007 = document.getElementById('2007.tag').getBoundingClientRect();
+      var calc2007 = rect2007.top - bodyrect2007.y;
+
+      var bodyrect2008 = document.body.getBoundingClientRect();
+      var rect2008 = document.getElementById('2008.tag').getBoundingClientRect();
+      var calc2008 = rect2008.top - bodyrect2008.y;
+
+      var bodyrect2009 = document.body.getBoundingClientRect();
+      var rect2009 = document.getElementById('2009.tag').getBoundingClientRect();
+      var calc2009 = rect2009.top - bodyrect2009.y;
+
+      var bodyrect2010 = document.body.getBoundingClientRect();
+      var rect2010 = document.getElementById('2010.tag').getBoundingClientRect();
+      var calc2010 = rect2010.top - bodyrect2010.y;
+
+      var bodyrect2011 = document.body.getBoundingClientRect();
+      var rect2011 = document.getElementById('2011.tag').getBoundingClientRect();
+      var calc2011 = rect2011.top - bodyrect2011.y;
+
+      var bodyrect2012 = document.body.getBoundingClientRect();
+      var rect2012 = document.getElementById('2012.tag').getBoundingClientRect();
+      var calc2012 = rect2012.top - bodyrect2012.y;
+
+      var bodyrect2013 = document.body.getBoundingClientRect();
+      var rect2013 = document.getElementById('2013.tag').getBoundingClientRect();
+      var calc2013 = rect2013.top - bodyrect2013.y;
+
+      var bodyrect2014 = document.body.getBoundingClientRect();
+      var rect2014 = document.getElementById('2014.tag').getBoundingClientRect();
+      var calc2014 = rect2014.top - bodyrect2014.y;
+
+      var bodyrect2015 = document.body.getBoundingClientRect();
+      var rect2015 = document.getElementById('2015.tag').getBoundingClientRect();
+      var calc2015 = rect2015.top - bodyrect2015.y;
+
+      var bodyrect2016 = document.body.getBoundingClientRect();
+      var rect2016 = document.getElementById('2016.tag').getBoundingClientRect();
+      var calc2016 = rect2016.top - bodyrect2016.y;
+
+      var bodyrect2017 = document.body.getBoundingClientRect();
+      var rect2017 = document.getElementById('2017.tag').getBoundingClientRect();
+      var calc2017 = rect2017.top - bodyrect2017.y;
+
+      var bodyrect2018 = document.body.getBoundingClientRect();
+      var rect2018 = document.getElementById('2018.tag').getBoundingClientRect();
+      var calc2018 = rect2018.top - bodyrect2018.y;
+
+      var bodyrect2019 = document.body.getBoundingClientRect();
+      var rect2019 = document.getElementById('2019.tag').getBoundingClientRect();
+      var calc2019 = rect2019.top - bodyrect2019.y;
+
+      var bodyrect2020 = document.body.getBoundingClientRect();
+      var rect2020 = document.getElementById('2020.tag').getBoundingClientRect();
+      var calc2020 = rect2020.top - bodyrect2020.y;
+
+      var bodyrect2021 = document.body.getBoundingClientRect();
+      var rect2021 = document.getElementById('2021.tag').getBoundingClientRect();
+      var calc2021 = rect2021.top - bodyrect2021.y;
+
+      var full2003 = calc2004 - calc2003;
+      document.getElementById('2003').style.height = full2003 + "px";
+      //console.log(full2004)
+
+      var full2004 = calc2005 - calc2004;
+      document.getElementById('2004').style.height = full2004 + "px";
+      //console.log(full2004)
+
+      var full2005 = calc2006 - full2005;
+      document.getElementById('2005').style.height = full2005 + "px";
+      //console.log(calc2005, rect2005.top, bodyrect2005.y)
+
+      var full2006 = calc2007 - calc2006;
+      document.getElementById('2006').style.height = full2006 + "px";
+      //console.log(full2006)
+
+      var full2007 = calc2008 - calc2007;
+      document.getElementById('2007').style.height = full2007 + "px";
+      //console.log(full2007)
+
+      var full2008 = calc2009 - calc2008;
+      document.getElementById('2008').style.height = full2008 + "px";
+
+      var full2009 = calc2010 - calc2009;
+      document.getElementById('2009').style.height = full2009 + "px";
+
+      var full2010 = calc2011 - calc2010;
+      document.getElementById('2010').style.height = full2010 + "px";
+
+      var full2011 = calc2012 - calc2011;
+      document.getElementById('2011').style.height = full2011 + "px";
+
+      var full2012 = calc2013 - calc2012;
+      document.getElementById('2012').style.height = full2012 + "px";
+
+      var full2013 = calc2014 - calc2013;
+      document.getElementById('2013').style.height = full2013 + "px";
+
+      var full2014 = calc2015 - calc2014;
+      document.getElementById('2014').style.height = full2014 + "px";
+
+      var full2015 = calc2016 - calc2015;
+      document.getElementById('2015').style.height = full2015 + "px";
+
+      var full2016 = calc2017 - calc2016;
+      document.getElementById('2016').style.height = full2016 + "px";
+
+      var full2017 = calc2018 - calc2017;
+      document.getElementById('2017').style.height = full2017 + "px";
+
+      var full2018 = calc2019 - calc2018;
+      document.getElementById('2018').style.height = full2018 + "px";
+
+      var full2019 = calc2020 - calc2019;
+      document.getElementById('2019').style.height = full2019 + "px";
+
+      var full2020 = calc2021 - calc2020;
+      document.getElementById('2020').style.height = full2020 + "px";
+
     }
-  }
 
-let vary = 0;
 
-function show() {
-document.getElementById("progress").style.display = "block";
-}
-
-function fixpopups2() {
-
- flexible();
- flexibleV();
-
- document.getElementById("atoms").style.display = "block";
- document.getElementById("antimatter").style.display = "none";
-
- checkCookie();
-
-
-  var myWindow5 = window.open("https://i.imgur.com/4xLptit.jpg", "", "width=640, height=360");
-
-  myWindow5.moveTo(screen.width / 4 , screen.height / 4);
-
-
-
-   }
-
-  function mainfunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("myCheck");
-    // Get the output text
-    var text = document.getElementById("main");
-
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true) {
-      text.style.display = "block";
-      text.style.float = "left";
-      text.style.width = "85%";
-      text.style.height = "280px";
-    } else {
-      text.style.display = "block";
-      text.style.float = "left";
-      text.style.width = "100%";
-      text.style.height = "280px";
-    }
-  }
-
-  function showChat() {
-    // Get the checkbox
-    var checkBox = document.getElementById("chatCheck");
-    // Get the output text
-    var chat = document.getElementById("chat");
-
-    // If the checkbox is checked, display the output text
-    if (chatCheck.checked == true) {
-      chat.style.display = "block";
-      document.getElementById("2003").style.padding = "200 0 0 0";
-      scroll123();
-
-    } else {
-      chat.style.display = "none";
-      document.getElementById("2003").style.padding = "0 0 0 0";
-      scroll123();
-    }
-  }
-
-  function showTaboc() {
-    // Get the checkbox
-    var checkBox = document.getElementById("tabocCheck");
-    // Get the output text
-    var chat = document.getElementById("taboc");
-
-    // If the checkbox is checked, display the output text
-    if (tabocCheck.checked == true) {
-      taboc.style.display = "block";
-      scroll123();
-
-    } else {
-      taboc.style.display = "none";
-      scroll123();
-    }
-  }
-
-
-  // a key map of allowed keys
-  var allowedKeys = {
-    54: '6',
-    57: '9',
-  }
-
-  // the 'official' Konami Code sequence
-  var konamiCode = ['6', '9'];
-
-  // a variable to remember the 'position' the user has reached so far.
-  var konamiCodePosition = 0;
-
-  // add keydown event listener
-  document.addEventListener('keydown', function(e) {
-    // get the value of the key code from the key map
-    var key = allowedKeys[e.keyCode];
-    // get the value of the required key from the konami code
-    var requiredKey = konamiCode[konamiCodePosition];
-
-    // compare the key with the required key
-    if (key == requiredKey) {
-
-      // move to the next key in the konami code sequence
-      konamiCodePosition++;
-
-      // if the last key is reached, activate cheats
-      if (konamiCodePosition == konamiCode.length) {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0;
-
-        document.getElementById("progress").style.display = "none";
-	document.getElementById("body").style.display = "none"
-
-        activateCheats();
-        zero();
-        document.getElementById("rickroll").pause();
-      }
-    } else //if you type past 6-9-
-
-    {
-      zero();
-
-      if (rock % 2 == 0) {
-        var paper = 2;
-        document.getElementById("rickroll").play();
-      }
-
-
-      if (konamiCodePosition < 2) {
-        nomorenicegif();
-        nomorenicevideo();
-	document.getElementById("body").style.display = "block"
-        document.getElementById(69).style.display = "block";
-        document.getElementById(3).style.display = "none";
-      }
-    }
-  });
-
-  function activateCheats() {
-    playvideo();
-    nicegif();
-    //document.getElementsByClassName(69).style.display = "none";
-    //document.getElementsByClassName(3).style.display = "block";
-
-  }
-
-  function nicegif() {
-    document.body.style.backgroundImage = "url('https://media.giphy.com/media/sTYFsFVK0c1lAnkj4T/giphy.gif')";
-    document.body.style.backgroundRepeat = "repeat-y";
-    document.body.style.backgroundSize = "contain";
-  }
-
-  function nomorenicegif() {
-    document.body.style.backgroundImage = "none";
-  }
-
-  function zero() {
-    konamiCodePosition = 0;
-  }
-
-
-
-
-  // a key map of allowed keys
-  var allowedKeys2 = {
-    52: '4',
-    50: '2',
-    48: '0',
-  };
-
-  // the 'official' Konami Code sequence
-  var konamiCode2 = ['4', '2', '0'];
-
-  // a variable to remember the 'position' the user has reached so far.
-  var konamiCodePosition2 = 0;
-
-  // add keydown event listener
-  document.addEventListener('keydown', function(e2) {
-
-    // get the value of the key code from the key map
-    var key2 = allowedKeys2[e2.keyCode];
-    // get the value of the required key from the konami code
-    var requiredKey2 = konamiCode2[konamiCodePosition2];
-
-    // compare the key with the required key
-    if (key2 == requiredKey2) {
-
-      // move to the next key in the konami code sequence
-      konamiCodePosition2++;
-
-
-      // if the last key is reached, activate cheats
-      if (konamiCodePosition2 == konamiCode2.length) {
-        //document.body.scrollTop = 0; // For Safari
-        //document.documentElement.scrollTop = 0;
-
-        document.getElementById("progress").style.display = "none";
-	document.getElementById("body").style.display = "none";
-
-        nicegif2();
-        playvideo2();
-        activateCheats2();
-        zero2()
-        document.getElementById("rickroll").pause();
-      }
-    } else //if key is incorrect
-    //if you type past 4-2-0-
-
-    {
-      zero2();
-
-      if (rock % 2 == 0 && paper % 2 == 0) {
-        document.getElementById("rickroll").play();
-      }
-
-      if (konamiCodePosition2 < 3) //konamiCodePosition2 is 0 or 1
-      {
-        nomorenicevideo2();
-	document.getElementById("body").style.display = "block"
-
-        document.getElementById(5).style.display = "none";
-
-      }
-    }
-  });
-
-
-
-
-    function ricky() {
-
-      rock++
-
-      var vid3 = document.getElementById("rickroll");
-      document.getElementById("rickroll").classList.toggle("rickyroll");
-      if (vid3.paused === true) {
-        vid3.currentTime = "0";
-        vid3.play();
-        pressed1();
-        //document.getElementById("firstfew").style = "opacity: 0"
-        document.getElementById("rickroll2").style.display = "none";
-        document.getElementById("progress").style.display = "none";
-        document.getElementById("optional").style.display = "block";
-        document.getElementById("2004").style.padding = "2250 0 0 0";
-        document.getElementById("optional").style.fontSize = "700";
-        document.getElementById("rickbutton").style.opacity = "0"
-        document.getElementById("rickbutton").style.height = "50";
-        document.getElementById("rickbutton").style.width = "50";
-        document.getElementById("space").style.display = "block";
-        //document.getElementById("rickbutton").style.zIndex = "1";
+    function sidebarfunction() {
+      // Get the checkbox
+      var checkBox = document.getElementById("myCheck");
+      // Get the output text
+      var text = document.getElementById("bar");
+
+      // If the checkbox is checked, display the output text
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+        text.style.float = "right";
+        text.style.width = "15%";
+        text.style.height = "0px";
       } else {
-        vid3.pause();
-        pressed2();
-        //document.getElementById("firstfew").style = "opacity: 0"
-        document.getElementById("rickroll2").style.display = "none";
-        document.getElementById("progress").style.display = "block";
-        document.getElementById("optional").style.display = "none";
-        document.getElementById("2004").style.padding = "0 0 0 0";
-        document.getElementById("optional").style.fontSize = "inherit"
-        document.getElementById("rickbutton").style.opacity = "1";
-        document.getElementById("rickbutton").style.height = "initial";
-        document.getElementById("rickbutton").style.width = "initial";
-        document.getElementById("space").style.display = "none";
-        //document.getElementById("rickbutton").style.position = "relative";
+        text.style.display = "none";
       }
     }
 
-    function pressed1() {
-      var pressed = 1;
-    }
+  let vary = 0;
 
-    function pressed2() {
-      var pressed = 2;
-    }
-
-  function activateCheats2() {
-    document.getElementsByClassName(69).style.display = "none";
-    document.getElementsByClassName(5).style.display = "block";
+  function show() {
+  document.getElementById("progress").style.display = "block";
   }
 
-  function nicegif2() {
-    document.body.style.backgroundImage = "url('https://media.giphy.com/media/Wzewn6bO0OuOa0ifog/giphy.gif')";
-    document.body.style.backgroundRepeat = "repeat-y";
-    document.body.style.backgroundSize = "contain";
-  }
+  function fixpopups2() {
 
-  function zero2() {
-    konamiCodePosition2 = 0;
-  }
+   flexible();
+   flexibleV();
 
-  function playvideo() {
-    var vid = document.getElementById("vidplay");
-    vid.currentTime = "0";
-    vid.play();
-    vid.loop = true;
-    vid.volume = 1;
-  }
+   document.getElementById("atoms").style.display = "block";
+   document.getElementById("antimatter").style.display = "none";
 
-  function nomorenicevideo() {
-    var vid = document.getElementById("vidplay");
-    vid.pause();
-    var vortex = document.getElementById("rickroll")
-    if (vortex.paused === true) {
-    document.getElementById("progress").style.display = "block";
-   }
-  }
+   checkCookie();
 
-  function playvideo2() {
-    var vid2 = document.getElementById("vidplay2");
-    vid2.currentTime = "0";
-    vid2.play();
-    vid2.loop = true;
-    vid2.volume = 1;
-  }
 
-  function nomorenicevideo2() {
-    var vid2 = document.getElementById("vidplay2");
-    vid2.pause();
-  }
+    var myWindow5 = window.open("https://i.imgur.com/4xLptit.jpg", "", "width=640, height=360");
 
-  function sidebarfunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("myCheck");
-    // Get the output text
-    var text = document.getElementById("bar");
+    myWindow5.moveTo(screen.width / 4 , screen.height / 4);
 
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true) {
-      text.style.display = "block";
-      text.style.float = "right";
-      text.style.width = "15%";
-      text.style.height = "0px";
-    } else {
-      text.style.display = "none";
-    }
-  }
 
-  function mainfunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("myCheck");
-    // Get the output text
-    var text = document.getElementById("main");
-
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true) {
-      text.style.display = "block";
-      text.style.float = "left";
-      text.style.width = "85%";
-      text.style.height = "280px";
-    } else {
-      text.style.display = "block";
-      text.style.float = "left";
-      text.style.width = "100%";
-      text.style.height = "280px";
-    }
-  }
-
-  function darkmode() {
-    var element = document.body;
-    var bore = document.getElementById(bar)
-    element.classList.toggle("dark-mode");
-    bore.classList.toggle("dark-mode");
-  }
-
-  function update() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-
-let size = 10;
-let hat = 0;
-
-function chungus() {
- var hat = 1;
- var bur = document.getElementById('coffinsound');
- bur.play();
-
-function increaseTime() {
-
-  var myWindow = window.open("", "", "width=640, height=360");
-
-    myWindow.document.body.innerHTML = "<video id='smar' src='https://cdn.kapwing.com/final_5f8e25245be95700d98c5f5d_196179.mp4' style='width:640; height:360; position:absolute; top:0; left:0;' autoplay muted loop></video>"
-
-    //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
-
-    var rngHeight = getRndInteger(0, screen.height - 360)
-    //console.log("height", rngHeight)
-        var rngWidth = getRndInteger(0, screen.width - 640)
-    //console.log("width", rngWidth)
-
-
-    function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
-    myWindow.moveTo(rngWidth, rngHeight)
-
-     //setTimeout(increaseTime, coffintime);
-
-  }
-
-
-  }
-
-
-  function timechungus() {
-
- var timebur = document.getElementById('coffinsound');
- timebur.play();
-
-function timeincreaseTime() {
-
-  var timemyWindow = window.open("", "", "width=640, height=360");
-
-    timemyWindow.document.body.innerHTML = "<video id='smart' src='https://cdn.kapwing.com/final_5f8e25245be95700d98c5f5d_196179.mp4' style='width:640; height:360; position:absolute; top:0; left:0;' autoplay muted loop></video>"
-
-    //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
-
-    var timerngHeight = timegetRndInteger(0, screen.height - 360);
-    //console.log("height", timerngHeight);
-
-        var timerngWidth = timegetRndInteger(0, screen.width - 640);
-    //console.log("width", timerngWidth);
-
-
-    function timegetRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
-    timemyWindow.moveTo(timerngWidth, timerngHeight);
-
-
-
-     setTimeout(timeincreaseTime, coffintime);
-
-  }
-
-  timeincreaseTime();
-  //console.log("time")
-  }
-
-
-function clam() {
- if (milk === 1) {
-chungus();
- }
-}
-
-var n;
-
-var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-var n = 0.4
-} else {
-var n = 0.55
-}
-
-function flexible() {
-
-var w = window.innerWidth
-var h = window.innerHeight
-
-var w2 = n * w;
-var h2 = n * h;
-
-
-  var picto = document.getElementsByClassName("picture");
-  var i;
-  for (i = 0; i < picto.length; i++) {
-
-  var tempheight = picto[i].height;
-  var tempwidth = picto[i].width;
-
-
-
-  if (tempheight > tempwidth) {
-
-  var aspect = tempwidth / tempheight;
-
-if (checkBox.checked == true) {
-var n = 0.5
-} else {
-var n = 0.65
-}
-
-var w2 = n * w;
-var h2 = n * h;
-
-  picto[i].height = h2;
-  picto[i].width = h2 * aspect;
-
-
-  } else {
-
-if (checkBox.checked == true) {
-var n = 0.4
-} else {
-var n = 0.55
-}
-
-var w2 = n * w;
-var h2 = n * h;
-
-  var aspect = tempheight / tempwidth;
-
-  picto[i].width = w2;
-  picto[i].height = w2 * aspect;
-
-
-//if (w2 * aspect > h2) {
-  //picto[i].height = h2;
-  //picto[i].width = h2 * aspect;
-//}
-
-
-  }
-  }
-}
-
-
-  function flexibleV() {
-
-var checkBoxV = document.getElementById("myCheck");
-
-var nV;
-
-if (checkBoxV.checked == true) {
-var nV = 0.45
-} else {
-var nV = 0.6
-}
-
-var wV = window.innerWidth;
-var hV = window.innerHeight;
-
-var w2V = nV * wV;
-var h2V = nV * hV;
-
-  var pictoV = document.getElementsByClassName("hidden");
-
-  var iV;
-
-
-  for (iV = 0; iV < pictoV.length; iV++) {
-
-
-
-  var tempheightV = $(pictoV[iV]).height();
-  var tempwidthV = $(pictoV[iV]).width();
-
-  if (tempheightV > tempwidthV) {
-
-/* if (checkBox.checked == true) {
-var nV = 0.55
-} else {
-var nV = 0.7
-} */
-
-
-  var w2V = nV * wV;
-  var h2V = nV * hV;
-
-  var aspectV = tempwidthV / tempheightV;
-
-  pictoV[iV].height = h2V;
-  pictoV[iV].width = h2V * aspectV;
-
-
-  } else {
-
-/* if (checkBox.checked == true) {
-var nV = 0.4
-} else {
-var nV = 0.55
-} */
-
-  var w2V = nV * wV;
-  var h2V = nV * hV;
-
-  var aspectV = tempheightV / tempwidthV;
-
-  pictoV[iV].width = w2V;
-  pictoV[iV].height = w2V * aspectV;
-
-
-
-
-
-  }
-  }
-
-
-}
-
-
-function setCookie2(cname,cvalue,exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires=" + d.toGMTString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie2(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  if (getCookie2("username") != "") {
-    var juice = getCookie2("username");
-    document.getElementById("biden").innerText = juice;
-    countWords();
-    alert("Welcome again " + juice);
-  } else {
-     var user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie2("username", user, 36500);
-       document.getElementById("biden").innerText = user;
-       countWords();
-         document.getElementById("bliy").style.display = "block"
 
      }
+
+    function mainfunction() {
+      // Get the checkbox
+      var checkBox = document.getElementById("myCheck");
+      // Get the output text
+      var text = document.getElementById("main");
+
+      // If the checkbox is checked, display the output text
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+        text.style.float = "left";
+        text.style.width = "85%";
+        text.style.height = "280px";
+      } else {
+        text.style.display = "block";
+        text.style.float = "left";
+        text.style.width = "100%";
+        text.style.height = "280px";
+      }
+    }
+
+    function showChat() {
+      // Get the checkbox
+      var checkBox = document.getElementById("chatCheck");
+      // Get the output text
+      var chat = document.getElementById("chat");
+
+      // If the checkbox is checked, display the output text
+      if (chatCheck.checked == true) {
+        chat.style.display = "block";
+        document.getElementById("2003").style.padding = "200 0 0 0";
+        scroll123();
+
+      } else {
+        chat.style.display = "none";
+        document.getElementById("2003").style.padding = "0 0 0 0";
+        scroll123();
+      }
+    }
+
+    function showTaboc() {
+      // Get the checkbox
+      var checkBox = document.getElementById("tabocCheck");
+      // Get the output text
+      var chat = document.getElementById("taboc");
+
+      // If the checkbox is checked, display the output text
+      if (tabocCheck.checked == true) {
+        taboc.style.display = "block";
+        scroll123();
+
+      } else {
+        taboc.style.display = "none";
+        scroll123();
+      }
+    }
+
+
+    // a key map of allowed keys
+    var allowedKeys = {
+      54: '6',
+      57: '9',
+    }
+
+    // the 'official' Konami Code sequence
+    var konamiCode = ['6', '9'];
+
+    // a variable to remember the 'position' the user has reached so far.
+    var konamiCodePosition = 0;
+
+    // add keydown event listener
+    document.addEventListener('keydown', function(e) {
+      // get the value of the key code from the key map
+      var key = allowedKeys[e.keyCode];
+      // get the value of the required key from the konami code
+      var requiredKey = konamiCode[konamiCodePosition];
+
+      // compare the key with the required key
+      if (key == requiredKey) {
+
+        // move to the next key in the konami code sequence
+        konamiCodePosition++;
+
+        // if the last key is reached, activate cheats
+        if (konamiCodePosition == konamiCode.length) {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0;
+
+          document.getElementById("progress").style.display = "none";
+  	document.getElementById("body").style.display = "none"
+
+          activateCheats();
+          zero();
+          document.getElementById("rickroll").pause();
+        }
+      } else //if you type past 6-9-
+
+      {
+        zero();
+
+        if (rock % 2 == 0) {
+          var paper = 2;
+          document.getElementById("rickroll").play();
+        }
+
+
+        if (konamiCodePosition < 2) {
+          nomorenicegif();
+          nomorenicevideo();
+  	document.getElementById("body").style.display = "block"
+          document.getElementById(69).style.display = "block";
+          document.getElementById(3).style.display = "none";
+        }
+      }
+    });
+
+    function activateCheats() {
+      playvideo();
+      nicegif();
+      //document.getElementsByClassName(69).style.display = "none";
+      //document.getElementsByClassName(3).style.display = "block";
+
+    }
+
+    function nicegif() {
+      document.body.style.backgroundImage = "url('https://media.giphy.com/media/sTYFsFVK0c1lAnkj4T/giphy.gif')";
+      document.body.style.backgroundRepeat = "repeat-y";
+      document.body.style.backgroundSize = "contain";
+    }
+
+    function nomorenicegif() {
+      document.body.style.backgroundImage = "none";
+    }
+
+    function zero() {
+      konamiCodePosition = 0;
+    }
+
+
+
+
+    // a key map of allowed keys
+    var allowedKeys2 = {
+      52: '4',
+      50: '2',
+      48: '0',
+    };
+
+    // the 'official' Konami Code sequence
+    var konamiCode2 = ['4', '2', '0'];
+
+    // a variable to remember the 'position' the user has reached so far.
+    var konamiCodePosition2 = 0;
+
+    // add keydown event listener
+    document.addEventListener('keydown', function(e2) {
+
+      // get the value of the key code from the key map
+      var key2 = allowedKeys2[e2.keyCode];
+      // get the value of the required key from the konami code
+      var requiredKey2 = konamiCode2[konamiCodePosition2];
+
+      // compare the key with the required key
+      if (key2 == requiredKey2) {
+
+        // move to the next key in the konami code sequence
+        konamiCodePosition2++;
+
+
+        // if the last key is reached, activate cheats
+        if (konamiCodePosition2 == konamiCode2.length) {
+          //document.body.scrollTop = 0; // For Safari
+          //document.documentElement.scrollTop = 0;
+
+          document.getElementById("progress").style.display = "none";
+  	document.getElementById("body").style.display = "none";
+
+          nicegif2();
+          playvideo2();
+          activateCheats2();
+          zero2()
+          document.getElementById("rickroll").pause();
+        }
+      } else //if key is incorrect
+      //if you type past 4-2-0-
+
+      {
+        zero2();
+
+        if (rock % 2 == 0 && paper % 2 == 0) {
+          document.getElementById("rickroll").play();
+        }
+
+        if (konamiCodePosition2 < 3) //konamiCodePosition2 is 0 or 1
+        {
+          nomorenicevideo2();
+  	document.getElementById("body").style.display = "block"
+
+          document.getElementById(5).style.display = "none";
+
+        }
+      }
+    });
+
+
+
+
+      function ricky() {
+
+        rock++
+
+        var vid3 = document.getElementById("rickroll");
+        document.getElementById("rickroll").classList.toggle("rickyroll");
+        if (vid3.paused === true) {
+          vid3.currentTime = "0";
+          vid3.play();
+          pressed1();
+          //document.getElementById("firstfew").style = "opacity: 0"
+          document.getElementById("rickroll2").style.display = "none";
+          document.getElementById("progress").style.display = "none";
+          document.getElementById("optional").style.display = "block";
+          document.getElementById("2004").style.padding = "2250 0 0 0";
+          document.getElementById("optional").style.fontSize = "700";
+          document.getElementById("rickbutton").style.opacity = "0"
+          document.getElementById("rickbutton").style.height = "50";
+          document.getElementById("rickbutton").style.width = "50";
+          document.getElementById("space").style.display = "block";
+          //document.getElementById("rickbutton").style.zIndex = "1";
+        } else {
+          vid3.pause();
+          pressed2();
+          //document.getElementById("firstfew").style = "opacity: 0"
+          document.getElementById("rickroll2").style.display = "none";
+          document.getElementById("progress").style.display = "block";
+          document.getElementById("optional").style.display = "none";
+          document.getElementById("2004").style.padding = "0 0 0 0";
+          document.getElementById("optional").style.fontSize = "inherit"
+          document.getElementById("rickbutton").style.opacity = "1";
+          document.getElementById("rickbutton").style.height = "initial";
+          document.getElementById("rickbutton").style.width = "initial";
+          document.getElementById("space").style.display = "none";
+          //document.getElementById("rickbutton").style.position = "relative";
+        }
+      }
+
+      function pressed1() {
+        var pressed = 1;
+      }
+
+      function pressed2() {
+        var pressed = 2;
+      }
+
+    function activateCheats2() {
+      document.getElementsByClassName(69).style.display = "none";
+      document.getElementsByClassName(5).style.display = "block";
+    }
+
+    function nicegif2() {
+      document.body.style.backgroundImage = "url('https://media.giphy.com/media/Wzewn6bO0OuOa0ifog/giphy.gif')";
+      document.body.style.backgroundRepeat = "repeat-y";
+      document.body.style.backgroundSize = "contain";
+    }
+
+    function zero2() {
+      konamiCodePosition2 = 0;
+    }
+
+    function playvideo() {
+      var vid = document.getElementById("vidplay");
+      vid.currentTime = "0";
+      vid.play();
+      vid.loop = true;
+      vid.volume = 1;
+    }
+
+    function nomorenicevideo() {
+      var vid = document.getElementById("vidplay");
+      vid.pause();
+      var vortex = document.getElementById("rickroll")
+      if (vortex.paused === true) {
+      document.getElementById("progress").style.display = "block";
+     }
+    }
+
+    function playvideo2() {
+      var vid2 = document.getElementById("vidplay2");
+      vid2.currentTime = "0";
+      vid2.play();
+      vid2.loop = true;
+      vid2.volume = 1;
+    }
+
+    function nomorenicevideo2() {
+      var vid2 = document.getElementById("vidplay2");
+      vid2.pause();
+    }
+
+    function sidebarfunction() {
+      // Get the checkbox
+      var checkBox = document.getElementById("myCheck");
+      // Get the output text
+      var text = document.getElementById("bar");
+
+      // If the checkbox is checked, display the output text
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+        text.style.float = "right";
+        text.style.width = "15%";
+        text.style.height = "0px";
+      } else {
+        text.style.display = "none";
+      }
+    }
+
+    function mainfunction() {
+      // Get the checkbox
+      var checkBox = document.getElementById("myCheck");
+      // Get the output text
+      var text = document.getElementById("main");
+
+      // If the checkbox is checked, display the output text
+      if (checkBox.checked == true) {
+        text.style.display = "block";
+        text.style.float = "left";
+        text.style.width = "85%";
+        text.style.height = "280px";
+      } else {
+        text.style.display = "block";
+        text.style.float = "left";
+        text.style.width = "100%";
+        text.style.height = "280px";
+      }
+    }
+
+    function darkmode() {
+      var element = document.body;
+      var bore = document.getElementById(bar)
+      element.classList.toggle("dark-mode");
+      bore.classList.toggle("dark-mode");
+    }
+
+    function update() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
 
-}
 
-function changeID() {
-var userv = prompt("Please enter your name:","");
-       setCookie2("username", userv, 30);
-       document.getElementById("biden").innerText = userv;
-              countWords();
-}
+  let size = 10;
+  let hat = 0;
 
-function countWords() {
+  function chungus() {
+   var hat = 1;
+   var bur = document.getElementById('coffinsound');
+   bur.play();
+
+  function increaseTime() {
+
+    var myWindow = window.open("", "", "width=640, height=360");
+
+      myWindow.document.body.innerHTML = "<video id='smar' src='https://cdn.kapwing.com/final_5f8e25245be95700d98c5f5d_196179.mp4' style='width:640; height:360; position:absolute; top:0; left:0;' autoplay muted loop></video>"
+
+      //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
+
+      var rngHeight = getRndInteger(0, screen.height - 360)
+      //console.log("height", rngHeight)
+          var rngWidth = getRndInteger(0, screen.width - 640)
+      //console.log("width", rngWidth)
 
 
-var brit = document.getElementById("body").textContent
+      function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
 
-var replace = document.getElementById("biden").textContent;
+      myWindow.moveTo(rngWidth, rngHeight)
 
-var re = new RegExp(replace, "gi");
+       //setTimeout(increaseTime, coffintime);
+
+    }
 
 
-var res = brit.match(re);
+    }
 
-//console.log(res)
 
-if (res !== null) {
-  document.getElementById("gmWordCount").innerText = res.length - 1;
+    function timechungus() {
+
+   var timebur = document.getElementById('coffinsound');
+   timebur.play();
+
+  function timeincreaseTime() {
+
+    var timemyWindow = window.open("", "", "width=640, height=360");
+
+      timemyWindow.document.body.innerHTML = "<video id='smart' src='https://cdn.kapwing.com/final_5f8e25245be95700d98c5f5d_196179.mp4' style='width:640; height:360; position:absolute; top:0; left:0;' autoplay muted loop></video>"
+
+      //https://cdn.kapwing.com/final_5f8e0f4347e45800d2d35393_179141.mp4
+
+      var timerngHeight = timegetRndInteger(0, screen.height - 360);
+      //console.log("height", timerngHeight);
+
+          var timerngWidth = timegetRndInteger(0, screen.width - 640);
+      //console.log("width", timerngWidth);
+
+
+      function timegetRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+      timemyWindow.moveTo(timerngWidth, timerngHeight);
+
+
+
+       setTimeout(timeincreaseTime, coffintime);
+
+    }
+
+    timeincreaseTime();
+    //console.log("time")
+    }
+
+
+  function clam() {
+   if (milk === 1) {
+  chungus();
+   }
+  }
+
+  var n;
+
+  var checkBox = document.getElementById("myCheck");
+  if (checkBox.checked == true) {
+  var n = 0.4
   } else {
-  document.getElementById("gmWordCount").innerText = "0";
+  var n = 0.55
   }
 
+  function flexible() {
+
+  var w = window.innerWidth
+  var h = window.innerHeight
+
+  var w2 = n * w;
+  var h2 = n * h;
+
+
+    var picto = document.getElementsByClassName("picture");
+    var i;
+    for (i = 0; i < picto.length; i++) {
+
+    var tempheight = picto[i].height;
+    var tempwidth = picto[i].width;
+
+
+
+    if (tempheight > tempwidth) {
+
+    var aspect = tempwidth / tempheight;
+
+  if (checkBox.checked == true) {
+  var n = 0.5
+  } else {
+  var n = 0.65
   }
 
-////console.log(window.innerHeight)
-document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC"
-//document.getElementById("bopeep3").innerText = "3 " + document.cookie;
+  var w2 = n * w;
+  var h2 = n * h;
 
-//document.getElementById("bopeep5").innerText = "z: " + z;
+    picto[i].height = h2;
+    picto[i].width = h2 * aspect;
 
 
-function logScroll() {
-////console.log(window.pageYOffset)
-var giggem = document.body.pageYOffset;
-setCookie("scrollProgress", giggem, 36500);
-}
+    } else {
 
-function setCookie(name,value,days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
+  if (checkBox.checked == true) {
+  var n = 0.4
+  } else {
+  var n = 0.55
+  }
+
+  var w2 = n * w;
+  var h2 = n * h;
+
+    var aspect = tempheight / tempwidth;
+
+    picto[i].width = w2;
+    picto[i].height = w2 * aspect;
+
+
+  //if (w2 * aspect > h2) {
+    //picto[i].height = h2;
+    //picto[i].width = h2 * aspect;
+  //}
+
+
     }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-}
-
-function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
-    return null;
-}
-
-function scrollToCookie() {
-var z = getCookie("scrollProgress");
-if (z = 0) {
-document.body.scrollTo(0, 0);
- } else {
-document.body.scrollTo(0, z + 880);
- }
-}
+  }
 
 
-var abcd = 0;
-var efgh = 0;
-var ijkl = 0;
+    function flexibleV() {
+
+  var checkBoxV = document.getElementById("myCheck");
+
+  var nV;
+
+  if (checkBoxV.checked == true) {
+  var nV = 0.45
+  } else {
+  var nV = 0.6
+  }
+
+  var wV = window.innerWidth;
+  var hV = window.innerHeight;
+
+  var w2V = nV * wV;
+  var h2V = nV * hV;
+
+    var pictoV = document.getElementsByClassName("hidden");
+
+    var iV;
+
+
+    for (iV = 0; iV < pictoV.length; iV++) {
 
 
 
-function fullmode() {
+    var tempheightV = $(pictoV[iV]).height();
+    var tempwidthV = $(pictoV[iV]).width();
 
-abcd++
+    if (tempheightV > tempwidthV) {
 
-if(abcd % 2 == 0) {
-
-var img = document.getElementsByClassName('picture');
-for (var i = 0; i < img.length; i++) {
-  img[i].style.display = 'none';
-}
-
-var img2 = document.getElementsByClassName('hidden');
-for (var i = 0; i < img2.length; i++) {
-  img2[i].style.display = 'none';
-}
-
-var img3 = document.getElementsByClassName('hiddenX');
-for (var i = 0; i < img3.length; i++) {
-  img3[i].style.display = 'none';
-
-}
-
-} else {
-
-var img = document.getElementsByClassName('picture');
-for (var i = 0; i < img.length; i++) {
-  img[i].style.display = 'block';
-  img[i].style.marginLeft = 'auto'
-  img[i].style.marginRight = 'auto'
-}
-
-var img2 = document.getElementsByClassName('hidden');
-for (var i = 0; i < img2.length; i++) {
-  img2[i].style.display = 'block';
-}
-
-var img3 = document.getElementsByClassName('hiddenX');
-for (var i = 0; i < img3.length; i++) {
-  img3[i].style.display = 'block';
-}}}
+  /* if (checkBox.checked == true) {
+  var nV = 0.55
+  } else {
+  var nV = 0.7
+  } */
 
 
-function printmode() {
+    var w2V = nV * wV;
+    var h2V = nV * hV;
 
-efgh++
+    var aspectV = tempwidthV / tempheightV;
 
-if(efgh % 2 == 0) {
+    pictoV[iV].height = h2V;
+    pictoV[iV].width = h2V * aspectV;
 
-var img = document.getElementsByClassName('picture');
-for (var i = 0; i < img.length; i++) {
-  img[i].style.display = 'none';
-}
 
-} else {
+    } else {
 
-var img = document.getElementsByClassName('picture');
+  /* if (checkBox.checked == true) {
+  var nV = 0.4
+  } else {
+  var nV = 0.55
+  } */
 
-var n = 0.35;
+    var w2V = nV * wV;
+    var h2V = nV * hV;
 
-flexible();
+    var aspectV = tempheightV / tempwidthV;
 
-for (var i = 0; i < img.length; i++) {
+    pictoV[iV].width = w2V;
+    pictoV[iV].height = w2V * aspectV;
 
-  img[i].style.display = 'block'
-  img[i].style.marginLeft = 'auto'
-  img[i].style.marginRight = 'auto'
-}}}
 
-function videomode() {
 
-ijkl++
 
-if(ijkl % 2 == 0) {
 
-var img2 = document.getElementsByClassName('hidden');
-for (var i = 0; i < img2.length; i++) {
-  img2[i].style.display = 'none';
-}
+    }
+    }
 
-var img3 = document.getElementsByClassName('hiddenX');
-for (var i = 0; i < img3.length; i++) {
-  img3[i].style.display = 'none';
-}
 
-} else {
+  }
 
-var img2 = document.getElementsByClassName('hidden');
-for (var i = 0; i < img2.length; i++) {
-  img2[i].style.display = 'block';
-}
 
-var img3 = document.getElementsByClassName('hiddenX');
-for (var i = 0; i < img3.length; i++) {
-  img3[i].style.display = 'block';
-}}}
+  function setCookie2(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
 
+  function getCookie2(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  function checkCookie() {
+    if (getCookie2("username") != "") {
+      var juice = getCookie2("username");
+      document.getElementById("biden").innerText = juice;
+      countWords();
+      alert("Welcome again " + juice);
+    } else {
+       var user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie2("username", user, 36500);
+         document.getElementById("biden").innerText = user;
+         countWords();
+           document.getElementById("bliy").style.display = "block"
+
+       }
+    }
+
+
+  }
+
+  function changeID() {
+  var userv = prompt("Please enter your name:","");
+         setCookie2("username", userv, 30);
+         document.getElementById("biden").innerText = userv;
+                countWords();
+  }
+
+  function countWords() {
+
+
+  var brit = document.getElementById("body").textContent
+
+  var replace = document.getElementById("biden").textContent;
+
+  var re = new RegExp(replace, "gi");
+
+
+  var res = brit.match(re);
+
+  //console.log(res)
+
+  if (res !== null) {
+    document.getElementById("gmWordCount").innerText = res.length - 1;
+    } else {
+    document.getElementById("gmWordCount").innerText = "0";
+    }
+
+    }
+
+  ////console.log(window.innerHeight)
+  document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC"
+  //document.getElementById("bopeep3").innerText = "3 " + document.cookie;
+
+  //document.getElementById("bopeep5").innerText = "z: " + z;
+
+
+  function logScroll() {
+  ////console.log(window.pageYOffset)
+  var giggem = document.body.pageYOffset;
+  setCookie("scrollProgress", giggem, 36500);
+  }
+
+  function setCookie(name,value,days) {
+      var expires = "";
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+
+  function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+  }
+
+  function scrollToCookie() {
+  var z = getCookie("scrollProgress");
+  if (z == 0) {
+  document.body.scrollTo(0, 0);
+   } else {
+  document.body.scrollTo(0, z + 880);
+   }
+  }
+
+
+  var abcd = 0;
+  var efgh = 0;
+  var ijkl = 0;
+
+
+
+  function fullmode() {
+
+  abcd++
+
+  if(abcd % 2 == 0) {
+
+  var img = document.getElementsByClassName('picture');
+  for (var i = 0; i < img.length; i++) {
+    img[i].style.display = 'none';
+  }
+
+  var img2 = document.getElementsByClassName('hidden');
+  for (var i = 0; i < img2.length; i++) {
+    img2[i].style.display = 'none';
+  }
+
+  var img3 = document.getElementsByClassName('hiddenX');
+  for (var i = 0; i < img3.length; i++) {
+    img3[i].style.display = 'none';
+
+  }
+
+  } else {
+
+  var img = document.getElementsByClassName('picture');
+  for (var i = 0; i < img.length; i++) {
+    img[i].style.display = 'block';
+    img[i].style.marginLeft = 'auto'
+    img[i].style.marginRight = 'auto'
+  }
+
+  var img2 = document.getElementsByClassName('hidden');
+  for (var i = 0; i < img2.length; i++) {
+    img2[i].style.display = 'block';
+  }
+
+  var img3 = document.getElementsByClassName('hiddenX');
+  for (var i = 0; i < img3.length; i++) {
+    img3[i].style.display = 'block';
+  }}}
+
+
+  function printmode() {
+
+  efgh++
+
+  if(efgh % 2 == 0) {
+
+  var img = document.getElementsByClassName('picture');
+  for (var i = 0; i < img.length; i++) {
+    img[i].style.display = 'none';
+  }
+
+  } else {
+
+  var img = document.getElementsByClassName('picture');
+
+  var n = 0.35;
+
+  flexible();
+
+  for (var i = 0; i < img.length; i++) {
+
+    img[i].style.display = 'block'
+    img[i].style.marginLeft = 'auto'
+    img[i].style.marginRight = 'auto'
+  }}}
+
+  function videomode() {
+
+  ijkl++
+
+  if(ijkl % 2 == 0) {
+
+  var img2 = document.getElementsByClassName('hidden');
+  for (var i = 0; i < img2.length; i++) {
+    img2[i].style.display = 'none';
+  }
+
+  var img3 = document.getElementsByClassName('hiddenX');
+  for (var i = 0; i < img3.length; i++) {
+    img3[i].style.display = 'none';
+  }
+
+  } else {
+
+  var img2 = document.getElementsByClassName('hidden');
+  for (var i = 0; i < img2.length; i++) {
+    img2[i].style.display = 'block';
+  }
+
+  var img3 = document.getElementsByClassName('hiddenX');
+  for (var i = 0; i < img3.length; i++) {
+    img3[i].style.display = 'block';
+  }}}
 
 </script>
