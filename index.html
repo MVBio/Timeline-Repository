@@ -12,6 +12,11 @@
 var completed = 303;
 var total = 310;
 
+var yearscompleted = 10
+var monthssofarcompleted = 8
+var yearsleftover = 7
+var monthsleftover = 0
+
 var n = 0.7;
 var nV = 0.55;
 
@@ -5865,7 +5870,7 @@ button:focus {outline:0;}
   document.getElementById('word-count').innerHTML = thecount;
 
    var bodywidth = window.innerWidth;
-
+  /*
       var percentage = completed / total ;
       var antipercentage = 1 - percentage;
 
@@ -5875,13 +5880,37 @@ button:focus {outline:0;}
       var antiperc = Math.round(antipercentage * 1000);
       var antipercent = antiperc / 10;
 
-    /*  document.getElementById('completed').style.width = percentage * 100 + '%';
+    document.getElementById('completed').style.width = percentage * 100 + '%';
       document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
 
       document.getElementById("completed").innerText = " " + percent + '%' + ' done with Fuzhou, on the way to Qingdao';
       document.getElementById("completed").innerText.fontSize = "15px";    document.getElementById("notcompleted").innerText = antipercent + '%' + " ";
   document.getElementById("notcompleted").innerText.fontSize = "15px";
 */
+
+
+
+var timecompleted = yearsompleted * 12 + monthssofarcompleted
+var timeleftover =  + yearsleftover * 12 + monthsleftover
+var totaltime = timecompleted + timeleftover
+
+var percentage = timecompleted / totaltime
+var antiperentage = timeleftover / totaltime
+
+var perc = Math.round(percentage * 1000);
+var percent = perc / 10;
+
+var antiperc = Math.round(antipercentage * 1000);
+var antipercent = antiperc / 10;
+
+document.getElementById('completed').style.width = percentage * 100 + '%';
+ document.getElementById("notcompleted").style.width = antipercentage * 100 + '%';
+
+ document.getElementById("completed").innerText = " " + percent + '%' + ' done with my life';
+ document.getElementById("completed").innerText.fontSize = "15px";    document.getElementById("notcompleted").innerText = antipercent + '%' + " left";
+document.getElementById("notcompleted").innerText.fontSize = "15px";
+
+
     function scroll123() {
 
       var bodyrect2003 = document.body.getBoundingClientRect();
