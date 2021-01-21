@@ -7113,9 +7113,11 @@ function originalmode() {
  if (editeddocs.style.display == block) {
    editeddocs.style.display = none;
    firsthanddocs.style.display = block;
+   document.getElementById("ogornew").innerText = "original"
  } else {
    editeddocs.style.display = "block"
    firsthanddocs.style.display = "none"
+   document.getElementById("ogornew").innerText = "revised"
  }
 }
 
