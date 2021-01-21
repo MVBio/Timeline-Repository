@@ -247,6 +247,7 @@ var coffintime = 1500;
       <center><button onclick="fullmode()">Toggle full</button></center>
       <center><button onclick="printmode()">Toggle printable mode</button></center>
       <center><button onclick="videomode()">Toggle video visibility</button></center>
+      <center><button onclick="originalmode()">Toggle original journals/documents with fixed spelling/grammar or keep it original</button></center>
   <center><iframe height="500" width="100%" id="chat" src="https://deadsimplechat.com/yrVil_mm9" style="display: none; width:450; height: 1000px;">
 </iframe></center>
 <!-- private: https://deadsimplechat.com/yrVil_mm9 -->
@@ -5698,7 +5699,7 @@ Back at home, our packing moved forward. Both
 
                        <br>
 
-                             <div id="bluenotebookclean"><p style="text-indent: 3.0em; padding-left: 15%; padding-right: 15%;"><center>Fixed version:</center><br><i>Sep. 27, 2014<br>
+                             <div id="bluenotebookclean" class="newdocs"><p style="text-indent: 3.0em; padding-left: 15%; padding-right: 15%;"><center>Fixed version:</center><br><i>Sep. 27, 2014<br>
                                Dear Journal, we are at KFC. Mom and Dad got coffee. *yawn* it is 7:00 AM. Our plane to Beijing leaves at 10:00 AM. Then me, Charis, Selah, and Dad go on a plane to San Francisco, and Mom, Makaria, and Kesed go to LA. I can't wait! I am going to watch LOTS of movies and games. Charis and Selah are doing Rubik's Cubes. I'll join them.<br>Malachi<br><br>
 
                                Still me. We were in KFC for a while, and me and Selah raced Rubik's Cubes and I won every time. We are at the check-in counter. I am listening to a recorded message microphone speak different languages. Mom and Dad ae checking in the ugly flower suitcases. Kesed keeps saying this journal is nine. We are still in Qingdao. <br><br>
@@ -5720,7 +5721,36 @@ Back at home, our packing moved forward. Both
 
                                Ok. Still a bit tilted -- Ow! My ears are p- *pop* popping. OW! <br><br>
 
-                               I played around with Kesed and tried crunching his ears. I havev already read to Kesed this Journal. He is trying to get in the Journal by pretending he is the pilot talking in a TX accent.</p></div>
+                               I played around with Kesed and tried crunching his ears. I have already read to Kesed this Journal. He is trying to get in the Journal by pretending he is the pilot talking in a TX accent.</p></div>
+
+
+                               <div id="bluenotebookoriginal" class="ogdocs" style="display: none;"><p style="text-indent: 3.0em; padding-left: 15%; padding-right: 15%;"><center>Original version:</center><br><i>Sep. 27, 2014<br>
+                              Dear Journal, we are at KFC. Mom and dad got coffee. *yawn* it is 7:00 AM. Our plane to Beijing leaves at 10:00 AM. Then me, Charis, Selah, and dad go on a plane to san frisisco, and mom, Makaria, and Kesed, go to LA. I can't wait! I am going to watch LOTS of movies and games. Charis and Selah are doing Rubik's Cubes. I'll join them.<br>
+                              Malachi<br><br>
+                              Still me.<br>
+                              We were in KFC For a while, and me and selah raced Rubik's Cubes and I won ever time. we are at the check-in counter. I am listening to a recorded message microphone speack different languige Mom and Dad are checking in the ugly flowor suitcases Kesed Keeps saying this Journal is nine we are still in Qingdao.<br><br>
+                              We are in the waiting room, waiting to board the plane. I 1st, played with Buzz Lightyear, solved the Rubik's Cube, then decided to write in here. Dad has already changed shirts once, Selah is drawing, I think, Kesed is messing with a peice of <sup>paper --></sup> plastic.<br>
+                              to be continued...<br><br>
+                              We are on the plane, waiting for it to take of to Beijing. I just ate my apple-flavered gummies, and Kesed ate half of his snickers bar. *sigh* <br><br>
+                              5 minutes later...<br>
+                              We are about to take off.<br>
+                              we are moving slowly. <strike>30 seconds</strike> <br>
+                              <sub><strike>1</strike><strike>2</strike></sub>3 minutes later... (next page)<br>
+                              (rumble)<br><br>
+                              <pre>
+                              We ard
+                                   taking
+                              of...
+                                  Taking offg{~
+                                  sorr,y or  th<sup>e</sup>
+                                   bad  handright.</pre><br><br>
+
+                              Ok. still a bit tilted -- OW! <br>
+                              My ears are p- *pop* popping. <br>
+                              OW! <br><br>
+
+                              <pre> I played around</pre> with Kesed and tried crunching his ears.<br>
+                              I have already read to Kesed this Journal. He is trying to get in the Journal by pretending he is the tilot talking in a TX accent</p></div>
 
 
 
@@ -7073,6 +7103,19 @@ document.getElementById("notcompleted").innerText.fontSize = "15px";
     img[i].style.marginLeft = 'auto'
     img[i].style.marginRight = 'auto'
   }}}
+
+function originalmode() {
+ var firsthanddocs = document.getElementsByClassName("ogdocs")
+ var editeddocs = document.getElementsByClassName("newdocs")
+
+ if (editeddocs.style.display == block) {
+   editeddocs.style.display = none;
+   firsthanddocs.style.display = block;
+ } else {
+   editeddocs.style.display = "block"
+   firsthanddocs.style.display = "none"
+ }
+}
 
   function videomode() {
 
