@@ -7104,19 +7104,24 @@ document.getElementById("notcompleted").innerText.fontSize = "15px";
     img[i].style.marginRight = 'auto'
   }}}
 
+
 function originalmode() {
- var firsthanddocs = document.getElementsByClassName("ogdocs")
- var editeddocs = document.getElementsByClassName("newdocs")
+ var firsthanddoc1 = document.getElementsById("bluenotebookoriginal")
+ var editeddoc1 = document.getElementsById("bluenotebookclean")
 
- console.log(editeddocs)
+var ogcount = false;
 
- if (editeddocs.style.display == block) {
-   editeddocs.style.display = none;
-   firsthanddocs.style.display = block;
+ console.log(editeddoc1)
+
+ if (ogcount = false;) {
+   editeddoc1.style.display = none;
+   firsthanddoc1.style.display = block;
+   var ogcount = true;
    document.getElementById("ogornew").innerText = "original"
  } else {
-   editeddocs.style.display = "block"
-   firsthanddocs.style.display = "none"
+   editeddoc1.style.display = "block"
+   firsthanddoc1.style.display = "none"
+   var ogcount = false;
    document.getElementById("ogornew").innerText = "revised"
  }
 }
