@@ -6078,9 +6078,9 @@ button:focus {outline:0;}
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  var thecount = numberWithCommas(quick)
+  var thecount = numberWithCommas(quick - 78)
 
-  document.getElementById('word-count').innerHTML = thecount - 78;
+  document.getElementById('word-count').innerHTML = thecount;
 
    var bodywidth = window.innerWidth;
   /*
