@@ -247,7 +247,7 @@ var coffintime = 1500;
       <center><button onclick="fullmode()">Toggle full</button></center>
       <center><button onclick="printmode()">Toggle printable mode</button></center>
       <center><button onclick="videomode()">Toggle video visibility</button></center>
-      <center><button onclick="originalmode()">Toggle original journals/documents with fixed spelling/grammar or keep it original</button></center>
+      <center><button onclick="originalmode()">Toggle original document style: <tag id="ogorfixed"> revised </tag></button></center>
   <center><iframe height="500" width="100%" id="chat" src="https://deadsimplechat.com/yrVil_mm9" style="display: none; width:450; height: 1000px;">
 </iframe></center>
 <!-- private: https://deadsimplechat.com/yrVil_mm9 -->
@@ -7107,6 +7107,8 @@ document.getElementById("notcompleted").innerText.fontSize = "15px";
 function originalmode() {
  var firsthanddocs = document.getElementsByClassName("ogdocs")
  var editeddocs = document.getElementsByClassName("newdocs")
+
+ console.log(firsthanddocs)
 
  if (editeddocs.style.display == block) {
    editeddocs.style.display = none;
